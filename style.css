@@ -103,19 +103,20 @@ body {
 
 
 .topNav {
+      margin: 12px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border: 1px solid yellow;
-    padding: 10px 80px;
+    padding: 24px 48px;
     color: white;
 }
 
-.topNav a {
-    display: flex;
+.topNav a { 
+      margin-top: -24px;
     list-style: none;
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 12px 12px;
     display: block;
 }
