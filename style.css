@@ -1,0 +1,95 @@
+/*font-family: 
+
+Poppins, sans serif
+RocknRoll, cursive
+
+Colors:
+
+Primary:
+
+Blood red: hsl(355, 66, 38)
+Black: hsl(150, 100, 0)
+Grunge Yellow: hsl(49, 16, 53) 
+
+Neutral:
+
+Light gray: hsl(22, 6, 76)
+Medium gray: hsl(17, 4, 65)
+Deep Gray: hsl(353, 6, 28)
+
+*/
+
+:root {
+    --ff-sans: 'Poppins', sans-serif;
+    --fw-light: 200;
+    --fw-normal: 400;
+    --fw-bold: 600;
+
+    --ff-rock: "Instrument Serif", serif;
+    --ff-rocktwo: "RocknRoll One", sans-serif;
+    --ff-rockthree: "Oswald", sans-serif;
+    --fs-400: 0.927rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.625rem;
+    --fs-900: 2.5rem;
+    --fs-1200: 6rem;
+
+    --clr-neutral: hsl(0, 0%, 0%);
+    --clr-neutralMG: hsl(17, 4%, 65%);
+    --clr-neutralDG: hsl(353, 6%, 28%);
+    --clr-primaryBR: hsl(355, 66%, 38%);
+    --clr-primaryBlack: hsl(150, 100%, 0%);
+    --clr-primaryGY: hsl(49, 16%, 53%);
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-neutral);
+    margin: 0;
+    line-height: inherit;
+    font-family: var(--ff-sans);
+    
+}
+
+.header-flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-flex-child {
+    flex: 1;
+    border: 2px solid magenta;
+}
+
+.header-flex-child:first-child {
+    margin-right: 20px;
+    border: 1px solid red;
+    color: white;
+}
+
+
+
+.topNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid yellow;
+    padding: 10px 80px;
+    color: white;
+}
+
+.topNav a {
+    display: flex;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
