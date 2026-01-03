@@ -32,6 +32,7 @@ Deep Gray: hsl(353, 6, 28)
     --fs-500: 1.25rem;
     --fs-600: 1.625rem;
     --fs-900: 2.5rem;
+    --fs-1000: 4rem;
     --fs-1200: 6rem;
 
     --clr-neutral: hsl(0, 0%, 0%);
@@ -58,22 +59,47 @@ body {
     
 }
 
+/* HEADER */
+
 .header-flex-container {
     display: flex;
     flex-direction: row;
 }
 
 .header-flex-child {
-    height: 110px;
+    height: 100%;
     flex: 1;
     border: 2px solid magenta;
 }
 
 .header-flex-child:first-child {
+      margin: 12px;
+      justify-content: center;
+      align-items: center;
+    flex-direction: row;
+    display: flex;
     border: 1px solid red;
     color: white;
+
+    
 }
 
+.brand-text {
+      text-align: center;
+      font-size: var(--fs-900);
+      width: max-content;
+      padding: 12px 12px;
+      color: var(--clr-primaryBR);
+}
+
+.headline-img {
+      width: max-content;
+      margin-left: -14px;
+      height: 23px;
+      padding: 6px 6px;
+}
+
+/* NAVIGATION */
 
 
 .topNav {
