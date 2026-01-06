@@ -119,15 +119,24 @@ body {
       padding: 6px 6px;
       height: 50px;
       font-size: 15px;
-      margin-top: 16px;
+      margin-top: 20px;
 }
 
 
 .header-flex-child:nth-child(3) {
       flex-direction: row;
+      display: flex;
+      border: 2px solid red;
       
 
+}#submit {
+	width: max-content;
+	max-width: 60px;
+	padding: 9px 45px;
+	margin-top: 35px;
 }
+
+
 
 
 .header-flex-child:thrid-child{
