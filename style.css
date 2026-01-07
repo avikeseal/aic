@@ -28,6 +28,7 @@ Deep Gray: hsl(353, 6, 28)
     --ff-rock: "Instrument Serif", serif;
     --ff-rocktwo: "RocknRoll One", sans-serif;
     --ff-rockthree: "Oswald", sans-serif;
+    --ff-rockfour: "Herold"
     --fs-400: 0.927rem;
     --fs-500: 1.25rem;
     --fs-600: 1.625rem;
@@ -87,17 +88,19 @@ body {
 }
 
 .brand-text {
+        font-family: var(--ff-rock);
       text-align: center;
-      font-size: var(--fs-900);
+      font-size: 3.7rem;
       width: max-content;
-      padding: 12px 35px;
+      padding: 10px 45px;
       color: var(--clr-primaryBR);
+      margin-top: -4px;
 }
 
 .headline-img {
       width: max-content;
-      margin-left: -40px;
-      height: 22px;
+      margin-left: -50px;
+      height: 7px;
       padding: 6px 6px;
 }
 
@@ -105,6 +108,10 @@ body {
 .header-flex-child:nth-child(2) {
       display: flex;
       margin-left: -6px;
+      border-radius: 5px;
+      margin-top: 30px;
+      padding: 10px 10px;
+      background-color: whitesmoke;
 
 
 }
@@ -116,10 +123,10 @@ body {
      width: 100%;
       max-width: 1200px;
       padding: 6px 6px;
-      height: 50px;
+      height: 45px;
       font-size: 15px;
-      margin-top: 22px;
-      border-radius: 10px;
+      /*margin-top: 23px;*/
+      border-radius: 3px;
 
 }
 
@@ -128,15 +135,21 @@ body {
       flex-direction: row;
       display: flex;
       border-radius: 3px;
+      margin-left: -12px;
       
 
 }
 
 #submit {
+    background-color: beige;
 	width: max-content;
 	max-width: 60px;
-	padding: 9px 45px;
-	margin-top: 42px;
+    padding: 16px 60px;
+	/*padding: 17px 70px;*/
+	margin-top: 32px;
+    font-family: var(--ff-rockthree);
+    font-weight: var(--fw-bold);
+    font-size: 20px;
 }
 
 .header-flex-child:nth-child(4) {
@@ -177,4 +190,7 @@ body {
     text-decoration: none;
     padding: 12px;
     display: block;
+    font-family: var(--ff-rockthree);
+    font-weight: var(--fw-bold);
+
 }
