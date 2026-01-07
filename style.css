@@ -69,7 +69,7 @@ body {
 .header-flex-child {
      border: 1px solid magenta;
     height: 100%;
-    flex: 1;
+    flex-grow: 1;
       margin: 12px;
       justify-content: center;
       align-items: center;
@@ -81,7 +81,6 @@ body {
 .header-flex-child:first-child {
       
     color: white;
-margin-right: 20px;
       
 
     
@@ -91,14 +90,13 @@ margin-right: 20px;
       text-align: center;
       font-size: var(--fs-900);
       width: max-content;
-      padding: 12px 12px;
+      padding: 12px 35px;
       color: var(--clr-primaryBR);
-      margin-left: 100px;
 }
 
 .headline-img {
       width: max-content;
-      margin-left: -14px;
+      margin-left: -40px;
       height: 22px;
       padding: 6px 6px;
 }
@@ -120,8 +118,9 @@ margin-right: 20px;
       padding: 6px 6px;
       height: 50px;
       font-size: 15px;
-      margin-top: 20px;
+      margin-top: 22px;
       border-radius: 10px;
+
 }
 
 
@@ -131,29 +130,30 @@ margin-right: 20px;
       border-radius: 3px;
       
 
-}#submit {
+}
+
+#submit {
 	width: max-content;
-      max-width: 50px;
-	padding: 9px 50px;
-	margin-top: 40px;
-      margin-right: 28px;
+	max-width: 60px;
+	padding: 9px 45px;
+	margin-top: 42px;
 }
 
 .header-flex-child:nth-child(4) {
-      color: white;
       flex-direction: row;
       display: flex;
-      border: 2px solid yellow;
-      margin: auto;
+      border: 2px solid white;
+      justify-content: center;
+      margin-top: 16px;
+      
 }
 
 .header-flex-child:nth-child(4) a {
-      width: max-content;
-      color: white;
-margin-left: -20px;
-
+    color: white;
+    margin: 6px 34px;
+    width: 60px;
+    height: 50px;
 }
-
 
 
 
