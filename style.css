@@ -158,16 +158,16 @@ body {
       display: flex;
       justify-content: center;
       margin-right: 76px;
+      margin-top: 30px;
 
       
 }
 
 .header-flex-child:nth-child(4) a {
-    color: white;
+    color: pink;
     margin: 6px 24px;
     width: 60px;
     height: 50px;
-    padding-left: -50px;
 
 }
 
