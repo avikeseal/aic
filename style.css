@@ -120,6 +120,7 @@ body {
 
 
 
+
 .search-input {
      width: 100%;
       max-width: 1200px;
@@ -156,20 +157,28 @@ body {
 .header-flex-child:nth-child(4) {
       flex-direction: row;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
+      align-items: flex-start;
       margin-right: 76px;
-      margin-top: 30px;
+      margin-top: 10px;
 
       
 }
 
 .header-flex-child:nth-child(4) a {
-    color: pink;
     margin: 6px 24px;
-    width: 60px;
+    width: 90px;
     height: 50px;
+    object-fit: cover;
 
 }
+
+.header-flex-child:nth-child(4) img {
+	display: flex;
+	max-width: 100%;
+	height: auto;
+}
+
 
 
 
