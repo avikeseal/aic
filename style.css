@@ -64,25 +64,28 @@ body {
 
 .header-flex-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .header-flex-child {
-    height: 100%;
     flex-grow: 1;
-      margin: 12px;
+	margin: ;
       justify-content: center;
       align-items: center;
     flex-direction: row;
     display: flex;
-    padding-left: 20px;
+    padding-left: ;
 
 }
 
 .header-flex-child:first-child {
+	
+	justify-content: center;
+	align-items: center;
       
     color: white;
-    margin-right: -30px;
+    margin-right: px;
       
 
     
@@ -91,27 +94,23 @@ body {
 .brand-text {
         font-family: var(--ff-rock);
       text-align: center;
-      font-size: 4.5rem;
+      font-size: 3.7rem;
       width: max-content;
-      padding: 10px 80px;
       color: var(--clr-primaryBR);
-      margin-top: -4px;
+      margin-top: ;
 }
 
 .headline-img {
       width: max-content;
-      margin-left: -83px;
-      margin-top: 47px;
-      height: 50px;
-      padding: 6px 6px;
+      margin-top: 27px;
 }
 
 
 .header-flex-child:nth-child(2) {
       display: flex;
-      margin-left: -6px;
+      margin: 10px;
+      margin-top: -10px;
       border-radius: 5px;
-      margin-top: 30px;
       padding: 10px 10px;
       background-color: whitesmoke;
        background-image: url('./img/srchicon.png');
@@ -129,8 +128,7 @@ body {
 .search-input {
      width: 100%;
       max-width: 1200px;
-      padding: 6px 10px;
-      height: 40px;
+      height: 30px;
       font-size: 15px;
       /*margin-top: 23px;*/
       border-radius: 3px;
@@ -143,7 +141,7 @@ body {
       flex-direction: row;
       display: flex;
       border-radius: 3px;
-      margin-left: -12px;
+      margin-left: 80px;
       
 
 }
@@ -155,7 +153,6 @@ body {
 	max-width: 60px;
     padding: 14px 75px;
 	/*padding: 17px 70px;*/
-	margin-top: 30px;
     font-family: var(--ff-rockthree);
     font-weight: var(--fw-bold);
     font-size: 20px;
@@ -166,16 +163,15 @@ body {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-right: 76px;
-      margin-top: 10px;
+      margin-top: 30px;
 
       
 }
 
 .header-flex-child:nth-child(4) a {
-    margin: 6px -25px;
-    width: 90px;
-    height: 50px;
+    margin-top: -117px;
+    margin-left: 240px;
+    width: 70px;
     object-fit: cover;
 
 }
@@ -194,22 +190,25 @@ body {
 
 
 .topNav {
+	flex-direction: column;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     border-top: 2px solid red;
-    padding: 12px 95px;
+    margin-top: -22px;
     color: white;
 }
 
 .topNav a { 
-      margin-top: -12px;
+	width: 100%;
+	border: 3px solid whitesmoke;
+	background: linear-gradient(1800deg, crimson, black, whitesmoke); 
     list-style: none;
     color: white;
     text-decoration: none;
-    padding: 12px;
+    padding: 13px;
     display: block;
     font-family: var(--ff-rockthree);
     font-weight: var(--fw-bold);
 
-}
+} 
