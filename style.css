@@ -19,6 +19,11 @@ Deep Gray: hsl(353, 6, 28)
 
 */
 
+
+
+
+/* display under 400 px wide */
+
 :root {
     --ff-sans: 'Poppins', sans-serif;
     --fw-light: 200;
@@ -148,6 +153,7 @@ body {
 }
 
 #submit {
+	margin-left: 90px;
 	
 	border: 2px solid white;
     background-color: #A8A9AD;
@@ -235,4 +241,130 @@ body {
 	font-size:1.3rem;
 
 }
+
+/* MEDIA QUERIES FOR DEVICES */
+
+@media (min-width: 400px) {
+
+#submit {
+	margin-left: 100px;
+
+}
+
+.header-flex-child:nth-child(4) a {
+ 
+    margin-left: 255px;
+
+}
+
+
+
+}
+
+@media (min-width: 500px) {
+#submit {
+	margin-left: 150px;
+	
+
+}
+
+.header-flex-child:nth-child(4) a {
+ 
+    margin-left: 310px;
+ 
+
+}
+
+@media (min-width: 550px) {
+#submit {
+	margin-left: 175px;
+	
+
+}
+
+.header-flex-child:nth-child(4) a {
+ 
+    margin-left: 330px;
+ 
+
+}
+
+
+
+}
+
+@media (min-width: 600px) {
+#submit {
+	margin-left: 190px;
+	
+
+}
+
+.header-flex-child:nth-child(4) a {
+ 
+    margin-left: 350px;
+ 
+
+}
+
+
+
+}
+
+@media (min-width: 650px) {
+#submit {
+	margin-left: 230px;
+}
+
+.header-flex-child:nth-child(4) a {
+    margin-left: 390px;
+
+}
+
+
+
+}
+
+@media (min-width: 700px) {
+#submit {
+	margin-left: 250px;
+	
+
+}
+
+.header-flex-child:nth-child(4) a {
+ 
+    margin-left: 410px;
+ 
+
+}
+
+
+
+}
+
+@media (min-width: 750px) {
+#submit {
+	margin-left: 280px;
+}
+
+.header-flex-child:nth-child(4) a {
+    margin-left: 440px;
+}
+
+
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
 
