@@ -78,7 +78,7 @@ body {
 	margin: ;
       justify-content: center;
       align-items: center;
-    flex-direction: row;
+    flex-direction: row; /* keep this row for all resolutions */
     display: flex;
     padding-left: ;
 
@@ -146,8 +146,10 @@ body {
       flex-direction: column;
       border-radius: 3px;
       width: 100%;
+      display: flex;
       justify-content: center;
 	align-items: center;
+	
       
 
 }
@@ -157,9 +159,9 @@ body {
 	
 	border: 2px solid white;
     background-color: #A8A9AD;
-	max-width: 50px;
-	
+	width: 50px;
     padding: 14px 75px;
+    margin-left: 85px;
 	/*padding: 17px 70px;*/
     font-family: var(--ff-rockthree);
     font-weight: var(--fw-bold);
@@ -178,7 +180,7 @@ body {
 
 .header-flex-child:nth-child(4) a {
     margin-top: -117px;
-    margin-left: 240px;
+    margin-left: 250px;
     width: 70px;
     object-fit: cover;
 
@@ -227,7 +229,7 @@ body {
 	background: #3b3b3b;
 	border: 2px solid magenta;
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	color: white;
 	justify-content: center;
 	align-items: center;
@@ -397,7 +399,6 @@ body {
       
     color: white;
     margin: -10px;
-    border: 1px solid red;
     padding: 30px;
     margin-left: -4px;
   
@@ -409,7 +410,7 @@ body {
 .brand-text {
         font-family: var(--ff-rock);
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       width: max-content;
       color: var(--clr-primaryBR);
       margin-top: ;
@@ -422,12 +423,11 @@ body {
 
 
 .header-flex-child:nth-child(2) {
-border: 1px solid magenta;
       display: flex;
       margin: 40px;
-      margin-left: -5px;
+      margin-left: -3px;
       border-radius: 5px;
-      padding:  10px 30px;
+      padding:  7px 30px;
       padding-left: 20px;
       background-color: whitesmoke;
        background-image: url('./img/srchicon.png');
@@ -445,11 +445,60 @@ border: 1px solid magenta;
 
 .search-input {
      width:max-content;
-      max-width: ;
       font-size: 15px;
       /*margin-top: 23px;*/
       border-radius: 3px;
       margin-left: 30px;
+}
+
+
+.header-flex-child:nth-child(3) {
+
+      border-radius: 3px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+	align-items: center;
+	margin: 40px;
+	
+      
+
+}
+
+#submit {
+	margin-left: -55px ;
+    background-color: #A8A9AD;
+    padding: 14px 40px;
+	/*padding: 17px 70px;*/
+    font-family: var(--ff-rockthree);
+    font-weight: var(--fw-bold);
+    font-size: 15px;
+}
+
+
+.header-flex-child:nth-child(4) {
+      flex-direction: row;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-left: -55px;
+      margin-bottom: 25px;
+      padding: 10px;
+
+      
+}
+
+.header-flex-child:nth-child(4) a {
+    margin-left: -0.5px ;
+    width: ;
+    object-fit: ;
+
+}
+
+.header-flex-child:nth-child(4) img {
+	display: flex;
+	max-width: ;
+	height: ;
 }
 
 
