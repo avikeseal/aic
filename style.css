@@ -372,6 +372,95 @@ body {
 
 }
 
+@media (min-width: 800px) {
+.header-flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.header-flex-child {
+    flex-grow: 1;
+	margin: 30px;
+      justify-content: center;
+      align-items: center;
+    flex-direction: row;
+    display: flex;
+    padding-left: ;
+
+}
+
+.header-flex-child:first-child {
+	
+	justify-content: center;
+	align-items: center;
+      
+    color: white;
+    margin: -10px;
+    border: 1px solid red;
+    padding: 30px;
+    margin-left: -4px;
+  
+      
+
+    
+}
+
+.brand-text {
+        font-family: var(--ff-rock);
+      text-align: center;
+      font-size: 2.5rem;
+      width: max-content;
+      color: var(--clr-primaryBR);
+      margin-top: ;
+}
+
+.headline-img {
+      width: max-content;
+      margin-top: 17px;
+}
+
+
+.header-flex-child:nth-child(2) {
+border: 1px solid magenta;
+      display: flex;
+      margin: 40px;
+      margin-left: -5px;
+      border-radius: 5px;
+      padding:  10px 30px;
+      padding-left: 20px;
+      background-color: whitesmoke;
+       background-image: url('./img/srchicon.png');
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-position: left 5px center;
+    
+
+
+}
+
+
+
+
+
+.search-input {
+     width:max-content;
+      max-width: ;
+      font-size: 15px;
+      /*margin-top: 23px;*/
+      border-radius: 3px;
+      margin-left: 30px;
+}
+
+
+
+
+
+
+}
+
+
+
 
 
 
