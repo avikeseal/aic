@@ -3,7 +3,7 @@
 Poppins, sans serif
 RocknRoll, cursive
 
-Colors:
+colors:
 
 Primary:
 
@@ -195,10 +195,7 @@ body {
 
 
 
-
 /* NAVIGATION */
-
-
 .topNav {
 	flex-direction: column;
     display: flex;
@@ -225,6 +222,8 @@ body {
 
 /* FOOTER */
 .footer {
+
+
 	display: flex;
 	background: #3b3b3b;
 	border: 2px solid magenta;
@@ -375,6 +374,7 @@ body {
 }
 
 @media (min-width: 800px) {
+
 .header-flex-container {
     display: flex;
     flex-direction: row;
@@ -490,20 +490,39 @@ body {
 
 .header-flex-child:nth-child(4) a {
     margin-left: -0.5px ;
-    width: ;
-    object-fit: ;
 
 }
 
 .header-flex-child:nth-child(4) img {
 	display: flex;
-	max-width: ;
-	height: ;
 }
 
+/* NAVIGATION */
+.topNav {
+	flex-direction: row;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid red;
+    color: white;
+    padding: 0;
+    margin-top: -22px;
+    width: 100%;
+    gap: -2.5rem;
+}
 
-
-
+.topNav a { 
+	
+	list-style: none;
+	background: none;
+	padding-right: 40px ;
+	border: none;
+	margin: ;
+	width: 100% ;
+	justify-content: space-between;
+	text-align: center;
+} 
 
 
 }
