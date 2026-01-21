@@ -101,8 +101,13 @@ body {
       text-align: center;
       font-size: 3.7rem;
       width: max-content;
-      color: var(--clr-primaryBR);
+      background-image: linear-gradient(red, black);
       margin-top: ;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+
 }
 
 .headline-img {
@@ -400,7 +405,7 @@ body {
     color: white;
     margin: -10px;
     padding: 30px;
-    margin-left: -4px;
+    margin-left: -8px;
   
       
 
@@ -410,7 +415,7 @@ body {
 .brand-text {
         font-family: var(--ff-rock);
       text-align: center;
-      font-size: 2.8rem;
+      font-size: 3rem;
       width: max-content;
       color: var(--clr-primaryBR);
       margin-top: ;
@@ -438,10 +443,6 @@ body {
 
 
 }
-
-
-
-
 
 .search-input {
      width:max-content;
@@ -509,7 +510,6 @@ body {
     padding: 0;
     margin-top: -22px;
     width: 100%;
-    gap: -2.5rem;
 }
 
 .topNav a { 
