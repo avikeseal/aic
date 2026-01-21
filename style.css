@@ -131,9 +131,6 @@ body {
 
 
 .search-input {
-	outline: none;
-	cursor: pointer;
-	background-image: url('./img/srchinputbg.png');
      width: 100%;
       max-width: 1200px;
       height: 30px;
@@ -141,13 +138,6 @@ body {
       /*margin-top: 23px;*/
       border-radius: 3px;
       margin-left: 40px;
-
-
-}
-
-.search-input:focus {
-	cursor: pointer;
-	box-shadow: 0 0 0 2px hsl(0, 0%, 0%); 
 
 }
 
@@ -199,7 +189,7 @@ body {
 .header-flex-child:nth-child(4) img {
 	display: flex;
 	max-width: 100%;
-	height: auto; 
+	height: auto;
 }
 
 
