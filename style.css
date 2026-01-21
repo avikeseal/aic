@@ -258,6 +258,20 @@ body {
 
 }
 
+.subscribe {
+	border: 1px solid red;
+	width: 100%;
+}
+
+.email-signup {
+	border: 1px solid magenta;
+	width: 100%;
+}
+
+.privacy {
+	border: 1px solid green;
+	width: 100%;:
+
 /* MEDIA QUERIES FOR DEVICES */
 
 @media (min-width: 400px) {
