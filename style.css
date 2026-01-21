@@ -101,7 +101,11 @@ body {
       text-align: center;
       font-size: 3.7rem;
       width: max-content;
-      color: var(--clr-primaryBR);
+      background-image: linear-gradient(red, black);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
       margin-top: ;
 }
 
@@ -131,6 +135,7 @@ body {
 
 
 .search-input {
+	cursor: pointer;
      width: 100%;
       max-width: 1200px;
       height: 30px;
@@ -138,6 +143,16 @@ body {
       /*margin-top: 23px;*/
       border-radius: 3px;
       margin-left: 40px;
+      background-image: url('./img/srchinputbg.png');
+      
+
+}
+
+.search-input:focus {
+	cursor: pointer;
+	outline: none;
+	box-shadow: 2px 2px 3px hsl(0, 0%, 0%);
+
 
 }
 
@@ -235,28 +250,6 @@ body {
 
 }
 
-.footer p {
-	margin: 10px;
-	padding: 10px;
-	font-family: var(--ff-rock);
-	font-size:1.3rem;
-
-}
-
-.subscribe {
-	border: 1px solid red;
-	width: 100%;
-}
-
-.email-signup {
-	border: 1px solid magenta;
-	width: 100%;
-}
-
-.privacy {
-	border: 1px solid green;
-	width: 100%;:
-
 /* MEDIA QUERIES FOR DEVICES */
 
 @media (min-width: 400px) {
@@ -271,8 +264,6 @@ body {
     margin-left: 255px;
 
 }
-
-
 
 }
 
