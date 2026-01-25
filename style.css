@@ -44,7 +44,7 @@ Dark Grey: #b1b1b1, rgb(177, 177, 177)
     --clr-secondary: rgb(10, 78, 8);
     --clr-tertiary: rgb(42, 110, 41);
     --clr-LG: rgb(199, 199, 199);
-    --clr-DG: rgb(177, 177, 177);
+    --clr-DG: #2b2b2b;
    
 
 
@@ -109,18 +109,22 @@ body {
 }
 
 .headline-img {
+	color: var(--clr-LG);
       width: max-content;
       margin-top: 27px;
 }
 
 
 .header-flex-child:nth-child(2) {
+border: 2px solid var(--clr-tertiary);
+	height: 50px;
       display: flex;
-      margin: 10px;
-      margin-top: -10px;
+      margin: 40px;
+      margin-left: -10px ;
       border-radius: 5px;
-      padding: 10px 10px;
-      background-color: whitesmoke;
+      padding: 25px 20px;
+      /*background-color: var(--clr-DG);*/
+      background-color: var(--clr-DG);
        background-image: url('./img/srchicon.png');
       background-size: 40px;
       background-repeat: no-repeat;
@@ -143,6 +147,7 @@ body {
       border-radius: 3px;
       margin-left: 40px;
       background-image: url('./img/srchinputbg.png');
+      box-shadow: 2px 2px var(--clr-LG);
       
 
 }
@@ -150,7 +155,7 @@ body {
 .search-input:focus {
 	cursor: pointer;
 	outline: none;
-	box-shadow: 2px 2px 3px hsl(0, 0%, 0%);
+	box-shadow: 2px 2px 3px var(--clr-primaryBlack);
 
 
 }
@@ -171,15 +176,16 @@ body {
 #submit {
 	margin-left: 90px;
 	
-	border: 2px solid white;
-    background-color: #A8A9AD;
+	border: 2px solid var(--clr-LG);
+    background-color: var(--clr-tertiary);
 	width: 50px;
     padding: 14px 75px;
     margin-left: 85px;
 	/*padding: 17px 70px;*/
     font-family: var(--ff-rockthree);
     font-weight: var(--fw-bold);
-    font-size: 20px;
+    font-size: 17px;
+    color: var(--clr-LG);
 }
 
 .header-flex-child:nth-child(4) {
@@ -215,7 +221,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid red;
     margin-top: -22px;
     color: white;
 }
@@ -227,7 +232,7 @@ body {
     list-style: none;
     color: white;
     text-decoration: none;
-    padding: 13px;
+    padding: 17px;
     display: block;
     font-family: var(--ff-rockthree);
     font-weight: var(--fw-bold);
@@ -380,6 +385,7 @@ body {
 
 .header-flex-child:nth-child(4) a {
     margin-left: 440px;
+	margin-top: -110px;
 }
 
 
@@ -437,12 +443,12 @@ body {
 
 .header-flex-child:nth-child(2) {
       display: flex;
-      margin: 40px;
-      margin-left: -3px;
+      /*margin: 40px;
+      
+      margin-left: -3px;*/
       border-radius: 5px;
-      padding:  7px 30px;
-      padding-left: 20px;
-      background-color: whitesmoke;
+      /*padding:  7px 30px;
+      padding-left: 20px;*/
        background-image: url('./img/srchicon.png');
       background-size: 40px;
       background-repeat: no-repeat;
@@ -472,7 +478,8 @@ body {
       display: flex;
       justify-content: center;
 	align-items: center;
-	margin: 40px;
+	margin: 45px;
+	margin-top:
 	
       
 
@@ -480,12 +487,10 @@ body {
 
 #submit {
 	margin-left: -55px ;
-    background-color: #A8A9AD;
     padding: 14px 40px;
 	/*padding: 17px 70px;*/
     font-family: var(--ff-rockthree);
     font-weight: var(--fw-bold);
-    font-size: 15px;
 }
 
 
@@ -517,7 +522,7 @@ body {
     list-style: none;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 2px solid red;
+    border-top: 2px solid var(--clr-tertiary);
     color: white;
     padding: 0;
     margin-top: -22px;
@@ -573,7 +578,6 @@ body {
       margin-left: -10px ;
       border-radius: 5px;
       padding: ;
-      background-color: whitesmoke;
        background-image: url('./img/srchicon.png');
       background-size: 40px;
       background-repeat: no-repeat;
@@ -588,9 +592,9 @@ body {
       max-width: 1200px;
       height: 30px;
       font-size: 15px;
-      /*margin-top: 23px;*/
+      margin-top: ;
       border-radius: 3px;
-      margin-left: ;
+      margin-left: 30px ;
       background-image: url('./img/srchinputbg.png');
       
 
@@ -610,7 +614,7 @@ body {
     list-style: none;
     justify-content: space-evenly;
     align-items: center;
-    border-top: 2px solid red;
+    border-top: 2px solid var(--clr-tertiary);
     color: white;
     padding: 13px;
     margin-top: -22px;
