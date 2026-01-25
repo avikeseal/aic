@@ -7,15 +7,12 @@ colors:
 
 Primary:
 
-Blood red: hsl(355, 66, 38)
-Black: hsl(150, 100, 0)
-Grunge Yellow: hsl(49, 16, 53) 
+Primary Green: #003407, rgb(0, 52, 7)
+Secondary Green: #0a4e08, rgb(10, 78, 8)
+Tertiary Green: #2a6e29, rgb(42, 110, 41)
+Light Grey: #c7c7c7, rgb(199, 199, 199)
+Dark Grey: #b1b1b1, rgb(177, 177, 177)
 
-Neutral:
-
-Light gray: hsl(22, 6, 76)
-Medium gray: hsl(17, 4, 65)
-Deep Gray: hsl(353, 6, 28)
 
 */
 
@@ -33,7 +30,7 @@ Deep Gray: hsl(353, 6, 28)
     --ff-rock: "Instrument Serif", serif;
     --ff-rocktwo: "RocknRoll One", sans-serif;
     --ff-rockthree: "Oswald", sans-serif;
-    --ff-rockfour: "Herold"
+    --ff-rockfour: "Herold";
     --fs-400: 0.927rem;
     --fs-500: 1.25rem;
     --fs-600: 1.625rem;
@@ -41,12 +38,14 @@ Deep Gray: hsl(353, 6, 28)
     --fs-1000: 4rem;
     --fs-1200: 6rem;
 
-    --clr-neutral: hsl(0, 0%, 0%);
-    --clr-neutralMG: hsl(17, 4%, 65%);
-    --clr-neutralDG: hsl(353, 6%, 28%);
-    --clr-primaryBR: hsl(355, 66%, 38%);
+    
     --clr-primaryBlack: hsl(150, 100%, 0%);
-    --clr-primaryGY: hsl(49, 16%, 53%);
+    --clr-primary: rgb(0, 52, 7);
+    --clr-secondary: rgb(10, 78, 8);
+    --clr-tertiary: rgb(42, 110, 41);
+    --clr-LG: rgb(199, 199, 199);
+    --clr-DG: rgb(177, 177, 177);
+   
 
 
 }
@@ -58,7 +57,7 @@ Deep Gray: hsl(353, 6, 28)
 }
 
 body {
-    background-color: var(--clr-neutral);
+    background-color: var(--clr-primaryBlack);
     margin: 0;
     line-height: inherit;
     font-family: var(--ff-sans);
@@ -101,7 +100,7 @@ body {
       text-align: center;
       font-size: 3.7rem;
       width: max-content;
-      background-image: linear-gradient(red, black);
+      background-image: linear-gradient(var(--clr-LG), var(--clr-primary));
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
@@ -559,7 +558,7 @@ body {
       text-align: center;
       font-size: 3.7rem;
       width: max-content;
-      color: var(--clr-primaryBR);
+     /* color: var(--clr-primaryBR);*/
       margin-top: ;
 }
 
