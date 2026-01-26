@@ -169,7 +169,7 @@ margin-top: -10px;
       display: flex;
       justify-content: center;
 	align-items: center;
-	margin-left: 25%;
+	margin-left: 27%;
 	margin-top: 20px;
 	
 	
@@ -285,7 +285,7 @@ margin-top: -10px;
 
 }
 
-
+/*
 @media (min-width: 450px) {
 #submit {
 	margin-left: 130px;
@@ -359,7 +359,7 @@ margin-top: -10px;
 .header-flex-child:nth-child(4) a {
     margin-left: 390px;
 
-}
+}*/
 
 
 
