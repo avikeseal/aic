@@ -1,7 +1,4 @@
-/*font-family: 
-
-Poppins, sans serif
-RocknRoll, cursive
+/*RocknRoll, cursive
 
 colors:
 
@@ -272,14 +269,9 @@ margin-top: -10px;
 
 @media (min-width: 400px) {
 
-#submit {
-	margin-left: 100px;
-
-}
-
 .header-flex-child:nth-child(4) a {
  
-    margin-left: 255px;
+    margin-left: -15px;
 
 }
 
