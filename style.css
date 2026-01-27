@@ -445,9 +445,10 @@ margin-top: -10px;
 	
 	justify-content: center;
 	align-items: center;
-      
+	border: 1px solid yellow;      
     color: white;
-    margin-left: 12px;
+    margin-top: ;
+    margin-left:;
       
 
 }
@@ -458,18 +459,18 @@ margin-top: -10px;
       font-size: 3.7rem;
       width: max-content;
      /* color: var(--clr-primaryBR);*/
-      margin-top: ;
+      margin-top:-1px;
 }
 
 .headline-img {
       width: max-content;
-      margin-top: 27px;
+     margin-top: ;
 }
 
 .header-flex-child:nth-child(2) {
       display: flex;
       margin: ;
-      margin-left: -10px ;
+      margin-left:-20px;
       border-radius: 5px;
       padding: ;
        background-image: url('./img/srchicon.png');
@@ -488,11 +489,32 @@ margin-top: -10px;
       font-size: 15px;
       margin-top: ;
       border-radius: 3px;
-      margin-left: 30px ;
+      margin-left:;
       background-image: url('./img/srchinputbg.png');
       
 
 }
+.header-flex-child:nth-child(3) {
+	border: none;
+	display: flex;
+	margin-top: 30px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: ;
+	
+
+
+}
+#submit {
+
+	margin-bottom: ;
+	margin-left: -55px;
+	padding: 10px 40px;
+
+
+}
+
 
 .header-flex-child:nth-child(4) a {
     margin-top: -117px;
