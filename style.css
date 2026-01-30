@@ -481,22 +481,37 @@ margin-top: -10px;
 
 .main_container {
         margin-top:;
+	padding:  30px;
+	padding-top: 5px;
         display: flex;
-        border: 2px solid yellow;
+        border: 2px solid ;
         background: var(--clr-primaryBlack);
         width: 100%;
         height: 250px;
+	gap: 20px;
 }
 
 
 .mc_one {
-        width: 200%;
-        flex-container: row;
-        border: 3px solid green;
+	display: flex;
+        width: 150%;
+        flex-direction: row;
+        border: 1px solid var(--clr-LG);
+	padding: 7px;
+
+}
+.sub_mc_one { 
+	display: flex;
+	border: 1px solid var(--clr-LG);
+	width: 100%;
+	flex-direction: row;
+	margin: 0;
+
+
 }
 .mc_two {
         width: 100%;
-        flex-container: row;
+        flex-direction: row;
         border: 3px solid blue;
 }
 
