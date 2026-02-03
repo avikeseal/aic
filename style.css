@@ -109,9 +109,11 @@ body {
 }
 
 .headline-img {
-	color: var(--clr-MG);
+    font-family: var(--ff-rockthree);
+	color: var(--clr-LG);
       width: max-content;
       margin-top: 4rem;
+      margin-left: -0.5rem;
 }
 
 
@@ -187,7 +189,6 @@ flex-direction: row;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: ;
       margin-left: 8rem;
       margin-top: -4.5rem;
 
@@ -212,7 +213,7 @@ flex-direction: row;
 
 /* NAVIGATION */
 .topNav {
-	flex-direction: column;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,7 +223,7 @@ flex-direction: row;
 
 .topNav a { 
 	width: 100vw;
-	border: 3px solid var(--clr-LG);
+    border: 1px solid var(--clr-LG);
 	background: linear-gradient(1800deg, var(--clr-secondary), black, whitesmoke); 
     list-style: none;
     color: var(--clr-LG);
@@ -261,6 +262,11 @@ flex-direction: row;
 
 
 /* MEDIA QUERIES FOR DEVICES */
+@media only screen and (min-width: 412px) {
+    .header-flex-child:nth-child(3) {
+        margin-left: 7rem;
+    }
+}
 @media only screen and (min-width: 414px) {
     .header-flex-child:nth-child(3) {
         display: flex;
@@ -280,16 +286,60 @@ flex-direction: row;
     }
 
     .header-flex-child:nth-child(4) {
-        margin-left: 20rem;
-        margin-top: -6rem;
-        display: flex;
-        flex-direction: row;
-        width: 15vw;
-        padding-top: 0.5rem;
-        
+        margin-left: 8rem;
+        margin-top: -4.7rem;
+    }
+}
 
-        
+@media only screen and (min-width: 768px) {
+    .header-flex-child:nth-child(3) {
+        margin-left: 17.5rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .header-flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
     }
 
+    .header-flex-child {
+    flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+    flex-direction: row; /* keep this row for all resolutions */
+    display: flex;
+
+    }
+
+.brand-text {
+        font-family: ghastlypanic;
+      text-align: center;
+      font-size: var(--fs-1200);
+      width: max-content;
+      background-image:linear-gradient(var(--clr-primary), var(--clr-primaryBlack));
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      margin-top: 1rem;
+      margin-left: 3rem;
+    }
+
+    .topNav {
+        margin-top: -1rem;
+        display: flex;
+        flex-direction: row;
+        border-top: 1px solid var(--clr-primary);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topNav a {
+        border: none;
+        background: none;
+        text-align: center;
+    }
 
 }
