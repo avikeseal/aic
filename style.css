@@ -62,8 +62,9 @@ Medium Grey: #818181, rgb(129, 129, 129)
 }
 
 body {
-    background-color: var(--clr-primaryBlack);
+    max-width: 810px;
     margin: 0 auto;
+    background-color: var(--clr-primaryBlack);
     line-height: inherit;
     font-family: var(--ff-sans);
     
@@ -224,7 +225,8 @@ flex-direction: row;
 }
 
 .topNav a { 
-	width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
     border: 1px solid var(--clr-LG);
 	background: linear-gradient(1800deg, var(--clr-secondary), black, whitesmoke); 
     list-style: none;
@@ -246,7 +248,7 @@ flex-direction: row;
 	display: flex;
     flex-direction: column;
 	background: var(--clr-tertiary);
-	width: 100vw;
+	width: auto;
 	height: 25vh;
 	justify-content: center;
 	align-items: center;
@@ -274,4 +276,24 @@ flex-direction: row;
     #submit {
         margin-left: 6.5rem;
     }
+}
+
+@media (min-width: 600px) {
+    #submit {
+        margin-left: 12rem;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 768px) {
+    #submit {
+        margin-left: 17.5rem;
+    }
+} 
+
+@media (min-width: 800px) {
+    .header-flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
 }
