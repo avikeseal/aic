@@ -62,8 +62,12 @@ Medium Grey: #818181, rgb(129, 129, 129)
 }
 
 body {
+    /*max-width: 800px;*/
     background-color: var(--clr-primaryBlack);
+   /* margin-left: auto;
+    margin-right: auto;*/
     margin: 0;
+    border: 1px solid var(--clr-tertiary);
     line-height: inherit;
     font-family: var(--ff-sans);
     
@@ -146,7 +150,7 @@ flex-direction: row;
       margin-left: 2.5em;
       background-image: url('./assets/img/srchinputbg.png');
       background-position: left;
-      box-shadow: 2px 2px var();
+      box-shadow: 2px 2px;
       
 
 }
@@ -244,7 +248,7 @@ flex-direction: row;
 	display: flex;
     flex-direction: column;
 	background: var(--clr-tertiary);
-	width: 100vw;
+	width: auto;
 	height: 25vh;
 	justify-content: center;
 	align-items: center;
