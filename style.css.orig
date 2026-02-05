@@ -62,11 +62,18 @@ Medium Grey: #818181, rgb(129, 129, 129)
 }
 
 body {
-    background: red;
+<<<<<<< HEAD
+    /*max-width: 800px;*/
+    background-color: var(--clr-primaryBlack);
+   /* margin-left: auto;
+    margin-right: auto;*/
+    margin: 0;
     border: 1px solid var(--clr-tertiary);
+=======
     max-width: 810px;
     margin: 0 auto;
     background-color: var(--clr-primaryBlack);
+>>>>>>> fe64bcf6acd28f285efdd7189188e9177be4dad4
     line-height: inherit;
     font-family: var(--ff-sans);
     
@@ -297,19 +304,5 @@ flex-direction: row;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-}
-
-.topNav {
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    border-top: 2px solid var(--clr-tertiary);
-}
-
-.topNav a {
-    background: none;
-    border: none;
-    text-align: center;
-    padding-right: 3rem;
 }
 }
