@@ -145,7 +145,7 @@ flex-direction: row;
 	cursor: pointer;
      width: 100%;
       font-size: var(--fs-400);
-      border-radius: 5px solid black;
+      border-radius: 5px solid var(--clr-primary);
       margin-left: 2.5em;
       background-image: url('./assets/img/srchinputbg.png');
       background-position: left;
@@ -319,22 +319,31 @@ flex-direction: row;
 }
 
 .brand-text {
+    margin-top: 0.5rem;
     margin-left: 2rem;
+}
+
+.headline-img {
+    font-family: var(--ff-rockthree);
+	color: var(--clr-LG);
+      width: max-content;
+      margin-top: 3rem;
+      margin-left: -0.5rem;
 }
 
 .header-flex-child:nth-child(2) {
 flex-direction: row;
-    margin-top:1.5rem;
-      padding: 2rem;
+    margin-top:2.5rem;
+      padding: 1.8rem;
 }
 
 .search-input {
     height: 35px;
 	cursor: pointer;
-     width: 20vw;
+    width: auto;
       font-size: var(--fs-400);
-      border-radius: 5px solid black;
       margin-left:1.5rem;
+      padding-right: 2rem;
       background-image: url('./assets/img/srchinputbg.png');
       background-position: bottom;
       box-shadow: 2px 2px;
@@ -350,7 +359,65 @@ flex-direction: row;
 
 }
 
+.header-flex-child:nth-child(3) {
+    border: 5px solid var(--clr-LG);
+      flex-direction: row;
+      border-radius: 3px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+        align-items: center;
+        /*border: 1px solid var(--clr-LG);*/
+
+}
+#submit {
+    margin-left: -1rem;
+    margin-top: 2.6rem;
+    height: 5px;
+    background-color: var(--clr-MG);
+    padding: 1.7em 1.7em;
+    width: auto;
+        /*padding: 17px 70px;*/
+    font-family: var(--ff-rockthree);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-400);
+    color: var(--clr-primaryBlack);
+}
+ #submit:hover {
+    background-color: var(--clr-tertiary);
+    color: var(--clr-LG);
+ }
+
+
+
+
+.header-flex-child:nth-child(4) {
+    padding: 4rem;
+      flex-direction: row;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+
+      
+}
+
+.header-flex-child:nth-child(4) a {
+    margin-bottom: -6rem;
+    margin-left: -5rem;
+    object-fit: cover;
+
+}
+
+.header-flex-child:nth-child(4) img {
+    display: flex;
+    max-width: 70px;
+    height: auto;
+}
+
+
 .topNav {
+    margin-top: -0.5rem;
     width: auto;
     display: flex;
     flex-direction: row;
