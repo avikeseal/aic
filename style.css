@@ -299,6 +299,76 @@ flex-direction: row;
     gap: 1rem;
 }
 
+.header-flex-child {
+    flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+    flex-direction: row; /* keep this row for all resolutions */
+    display: flex;
+
+}
+
+.header-flex-child:first-child {
+	
+	justify-content: center;
+	align-items: center;
+    color: white;
+      
+
+    
+}
+
+.brand-text {
+    margin-left: 2rem;
+}
+
+.headline-img {
+    font-family: var(--ff-rockthree);
+	color: var(--clr-LG);
+      width: max-content;
+      margin-top: 4rem;
+      margin-left: -0.5rem;
+}
+
+.header-flex-child:nth-child(2) {
+flex-direction: row;
+    margin-top: 2rem;
+	height: 5vh;
+      display: flex;
+      border-radius: 5px;
+      padding: 1.5rem;
+      border: 3px solid var(--clr-tertiary);
+      background-color: var(--clr-tertiary);
+      background-image:url('./assets/img/srchicon.png');
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-position: left 5px center;
+
+
+}
+
+.search-input {
+    height: 35px;
+	cursor: pointer;
+     width: 100%;
+      font-size: var(--fs-400);
+      border-radius: 5px solid black;
+      margin-left: 2.5em;
+      background-image: url('./assets/img/srchinputbg.png');
+      background-position: left;
+      box-shadow: 2px 2px;
+      
+
+}
+
+.search-input:focus {
+	cursor: pointer;
+	outline: none;
+	box-shadow: 2px 2px 3px var(--clr-primaryBlack);
+
+
+}
+
 .topNav {
     width: auto;
     display: flex;
