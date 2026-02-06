@@ -382,10 +382,12 @@ flex-direction: row;
     font-weight: var(--fw-bold);
     font-size: var(--fs-400);
     color: var(--clr-primaryBlack);
+    transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
 }
  #submit:hover {
-    background-color: var(--clr-tertiary);
     color: var(--clr-LG);
+     background-color: var(--clr-tertiary);
+     box-shadow: 0 0 15px var(--clr-primary);
  }
 
 
@@ -425,10 +427,19 @@ flex-direction: row;
 }
 
 .topNav a {
+    transition: background-color 0.5s ease-in-out, color 0.2s ease-in-out;
+    text-align: center;
     background: none;
     border: none;
-    text-align: center;
     padding-right: 3rem;
+}
+
+.topNav a:hover {
+    
+    color: var(--clr-primary);
+    text-shadow: 7px -7px 15px;
+    box-shadow: 0 0 15px var(--clr-primary);
+    border: 2px solid var(--clr-LG);
 }
 
 }
