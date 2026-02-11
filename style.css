@@ -52,7 +52,7 @@ Medium Grey: #818181, rgb(129, 129, 129)
 
     
     --clr-primaryBlack: hsl(150, 100%, 0%);
-    --clr-primary: rgb(138, 3, 3);
+    --clr-primary: #8B0000;
     --clr-secondary: rgb(86, 5, 5);
     --clr-tertiary: rgb(60, 6, 6);
     --clr-LG: rgb(199, 199, 199);
@@ -108,7 +108,7 @@ body {
       text-align: center;
       font-size: var(--fs-1200);
       width: max-content;
-      background-image:linear-gradient(var(--clr-primary), var(--clr-primaryBlack));
+      background-image:linear-gradient(var(--clr-primary), black);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
@@ -132,8 +132,8 @@ flex-direction: row;
       display: flex;
       border-radius: 5px;
       padding: 1.5rem;
-      border: 3px solid var(--clr-tertiary);
-      background-color: var(--clr-tertiary);
+      border: 3px solid whitesmoke;
+      background-color: #8B0000;
       background-image:url('./assets/img/srchicon.png');
       background-size: 40px;
       background-repeat: no-repeat;
@@ -221,9 +221,98 @@ flex-direction: row;
 /*PROJECTS CONTAINER*/
 .projects_container {
     display: flex;
+    flex-direction: column;
     height: 100vh;
-    border: 1px solid white;
 }
+
+.hlborder {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid cyan;
+}
+
+.projects_headline {
+    display: flex;
+    flex-direction: row;
+}
+
+.projects_headline h1 {
+    margin-left: 1em;
+    height: 100%;
+    font-family: bptypewrite;
+    color: var(--clr-LG);
+    font-size: var(--fs-600);
+}
+.turner-btn {
+    font-family: bptypewrite;
+    font-size: var(--fs-400);
+    color: white;
+    width: auto;
+
+}
+
+.turner-btn a {
+    color: whitesmoke;
+}
+/*FAKE BACKDROP DESIGN*/
+.pc_onefake {
+    border: 1px solid red;
+    padding-bottom: 1em;
+
+}
+
+.fake1 {
+     border: 1px solid red;
+
+    height: 50%;
+}
+
+.fake2 {
+     border: 1px solid red;
+
+     height: 50%
+}
+
+.fake3 {
+     border: 1px solid red;
+
+     height: 50%
+}
+
+.fake4 {
+     border: 1px solid red;
+
+     height: 50%
+}
+
+.quote {
+    display: flex;
+    border: magenta;
+    flex-direction: column;
+    height: 50%;
+}
+/*PROJECTS*/
+.pc_one {
+    border-top: 1px solid red;
+}
+
+.project1 {
+    height: 30vh;
+     border-top: 1px solid red;
+}
+
+.project2 {
+    height: 30vh;
+     border-top: 1px solid red;
+}
+
+.project3 {
+    height: 30vh;
+     border-top: 1px solid red;
+}
+
+
 
 
 
@@ -242,7 +331,7 @@ flex-direction: row;
     width: 100%;
     box-sizing: border-box;
     border: 1px solid var(--clr-LG);
-	background: linear-gradient(1800deg, var(--clr-secondary), black, whitesmoke); 
+	background: linear-gradient(1800deg, var(--clr-primary), black, whitesmoke); 
     list-style: none;
     color: var(--clr-LG);
     text-decoration: none;
@@ -258,11 +347,11 @@ flex-direction: row;
 /* FOOTER */
 .footer {
     font-family: bptypewrite;
-    color: var(--clr-MG);
+    color: var(--clr-LG);
     text-align: center;
 	display: flex;
     flex-direction: column;
-	background: var(--clr-tertiary);
+	background: var(--clr-primary);
 	width: auto;
 	height: 25vh;
 	justify-content: center;
@@ -383,10 +472,10 @@ flex-direction: row;
 }
 #submit {
     margin-left: -1rem;
-    margin-top: 2.6rem;
+    margin-top: 2.4rem;
     height: 5px;
     background-color: var(--clr-MG);
-    padding: 1.7em 1.7em;
+    padding: 1.8em 1.8em;
     width: auto;
         /*padding: 17px 70px;*/
     font-weight: var(--fw-bold);
@@ -423,7 +512,7 @@ flex-direction: row;
 
 .header-flex-child:nth-child(4) img {
     display: flex;
-    max-width: 65px;
+    max-width: 70px;
     height: auto;
 }
 
@@ -449,7 +538,7 @@ flex-direction: row;
     color: var(--clr-primary);
     text-shadow: 7px -7px 15px;
     box-shadow: 0 0 15px var(--clr-primary);
-    border: 2px solid var(--clr-LG);
+    border: 2px solid cyan;
 }
 
 
