@@ -231,9 +231,6 @@ flex-direction: row;
 
 .hlborder {
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid cyan;
 }
 
 .projects_headline {
@@ -263,49 +260,28 @@ flex-direction: row;
     padding: 1em 1em;
 }
 /*FAKE BACKDROP DESIGN*/
-.pc_onefake {
-    border: 1px solid red;
-    padding-bottom: 1em;
 
-}
-
-.fake1 {
-     border: 1px solid red;
-
-    height: 50%;
-}
-
-.fake2 {
-     border: 1px solid red;
-
-     height: 50%;
-}
-
-.fake3 {
-     border: 1px solid red;
-
-     height: 50%;
-}
-
-.fake4 {
-     border: 1px solid red;
-
-     height: 50%;
-}
 /*PROJECTS*/
-
-.project1 {
-    height: 30vh;
+.pagesSection {
+    display:flex;
+    border-top: 2px solid red;
+    background-color: black;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 2.5rem;
 }
 
-.project2 {
-    height: 30vh;
-     border-top: 1px solid red;
-}
+.page-content-border {
+    border: 1px solid white;
+    height: 100%;
+    padding: 0.5rem;
 
-.project3 {
-    height: 30vh;
-     border-top: 1px solid red;
+}
+.page-content {
+    border: 1px solid white;
+    height: 100%;
+    background: #f9f1f1;
 }
 
 
@@ -349,7 +325,7 @@ flex-direction: row;
     flex-direction: column;
 	background: var(--clr-primary);
 	width: auto;
-	height: 25vh;
+	height: 30vh;
 	justify-content: center;
 	align-items: center;
 
@@ -518,7 +494,7 @@ flex-direction: row;
         width: auto;
         display: flex;
         flex-direction: row;
-        border-top: 2px solid var(--clr-tertiary);
+        border-top: 2px solid red;
     }
 
     .topNav a {
