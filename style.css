@@ -69,7 +69,7 @@ Medium Grey: #818181, rgb(129, 129, 129)
 }
 
 body {
-    border: 1px solid var(--clr-tertiary);
+    border: 1px solid var(--clr-LG);
     max-width: 810px;
     margin: 0 auto;
     background-color: var(--clr-primaryBlack);
@@ -126,6 +126,10 @@ body {
 
 #pagehl {
     font-size:8.5rem;
+}
+
+#pagehlimg {
+    margin-top: 4rem;
 }
 
 
@@ -247,28 +251,74 @@ flex-direction: row;
     color: var(--clr-LG);
     font-size: var(--fs-900);
 }
+
 .turner-btn {
+    margin-top: -2rem;
+    margin-left: 8px;
+    flex-direction: column;
     padding: 1rem;
     font-family: bptypewrite;
-    font-size: var(--fs-400);
+    font-size: var(--fs-500);
     color: white;
     width: 80vw;
 
 }
 
 .turner-btn a {
-    border: 1px solid white;
-    color: whitesmoke;
+    border: 5px solid var(--clr-LG);
+    border-radius: 20px;
+    color: var(--clr-LG);
     text-decoration: none;
     display: inline-block;
-    padding: 8px 26px;
+    padding: 16px 26px;
     margin-left: 1.7rem;
-}
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out; 
+  }
 
 .turner-btn a:hover {
-    background-color: red;
+    border: 5px solid cyan;
+    background-color: #8B0000;
     color: whitesmoke;
+}    
+
+.previous {
+    margin-top: 1rem;
 }
+.next {
+    margin-top: 1rem;
+}
+
+
+
+.home_button {
+    margin-left: 13rem;
+    margin-top: -5rem;
+    display: flex;
+    width: 50px;
+}
+
+.home_button a {
+    color: var(--clr-LG);
+    font-size: var(--fs-500);
+    background-color: #8B0000;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 11px;
+    margin-top: 1.5rem;
+    border: 1px solid white;
+    border-radius: 100px;
+    border: 5px solid var(--clr-LG);
+
+}
+
+#homeButton {
+    margin-top: -4.5rem;
+    margin-left: 14rem;
+}
+
+
 
 /*FAKE BACKDROP DESIGN*/
 
@@ -280,7 +330,6 @@ flex-direction: row;
     background-color: black;
     flex-direction: column;
     padding: 3rem;
-
 }
 
 .page-content-border {
@@ -293,7 +342,7 @@ flex-direction: row;
 .page-content {
     height: 100%;
     border: 1px solid #fbf0d9;
-    background: #f9f1f1;
+    background-color: var(--clr-tertiary);
 }
 
 
@@ -331,6 +380,7 @@ flex-direction: row;
 /* FOOTER */
 .footer {
     font-family: bptypewrite;
+    font-size: var(--fs-500);
     color: var(--clr-LG);
     text-align: center;
 	display: flex;
@@ -353,11 +403,29 @@ flex-direction: row;
     #submit {
         margin-left: 6.5rem;
     }
+    .home_button {
+        margin-left: 15rem;
+    }
 }
 
 @media (min-width: 414px) and (max-width: 430px) {
     #submit {
         margin-left: 6.5rem;
+    }
+    .home_button {
+        margin-left: 18rem;
+    }
+    #homeButton {
+        margin-left: 16rem;
+    }
+}
+
+@media (min-width: 520px) {
+    .home_button {
+        margin-left: 24rem;
+    }
+    #homeButton {
+        margin-left: 22rem;
     }
 }
 
@@ -365,11 +433,23 @@ flex-direction: row;
     #submit {
         margin-left: 12rem;
     }
+    .home_button {
+        margin-left: 28rem;
+    }
+    #homeButton {
+        margin-left: 26rem;
+    }
 }
 
 @media (min-width: 767px) and (max-width: 768px) {
     #submit {
         margin-left: 17.5rem;
+    }
+    .home_button {
+        margin-left: 38rem;
+    }
+     #homeButton {
+        margin-left: 37rem;
     }
 } 
 
@@ -511,6 +591,7 @@ flex-direction: row;
 
     .topNav a {
         transition: background-color 0.5s ease-in-out, color 0.2s ease-in-out;
+        transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out;
         text-align: center;
         background: none;
         border: none;
@@ -523,5 +604,13 @@ flex-direction: row;
         text-shadow: 7px -7px 15px;
         box-shadow: 0 0 15px var(--clr-primary);
         border: 2px solid cyan;
+    }
+
+    .home_button {
+        margin-left: 40rem;
+    }
+
+    #homeButton {
+        margin-left: 39rem;
     }
 }
