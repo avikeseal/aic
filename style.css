@@ -227,6 +227,7 @@ flex-direction: row;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    margin-top: -2rem;
 }
 
 .hlborder {
