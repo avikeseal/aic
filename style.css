@@ -188,14 +188,14 @@ flex-direction: row;
 #submit {
     margin-top: 1rem;
     margin-left: 5.5rem;
-    background-color: var(--clr-MG);
+    background-color: var(--clr-tertiary);
         width: 10vw;
     padding: 1em 4em;
         /*padding: 17px 70px;*/
     font-family: bptypewrite;
     font-weight: var(--fw-bold);
     font-size: var(--fs-400);
-    color: var(--clr-primaryBlack);
+    color: var(--clr-LG);
 }
 
 
@@ -301,7 +301,7 @@ flex-direction: row;
 .home_button a {
     color: var(--clr-LG);
     font-size: var(--fs-500);
-    background-color: #8B0000;
+    background-color: var(--clr-tertiary);
     width: 50px;
     height: 50px;
     padding-top: 10px;
@@ -324,6 +324,7 @@ flex-direction: row;
 
 /*PROJECTS*/
 .pagesSection {
+    margin-top: 1rem;
     height: 100vh;
     display:flex;
     border-top: 2px solid red;
@@ -385,7 +386,7 @@ flex-direction: row;
     text-align: center;
 	display: flex;
     flex-direction: column;
-	background: var(--clr-primary);
+	background: var(--clr-tertiary);
 	width: auto;
 	height: 25vh;
 	justify-content: center;
@@ -538,18 +539,19 @@ flex-direction: row;
         margin-left: -1rem;
         margin-top: 2.4rem;
         height: 5px;
-        background-color: var(--clr-MG);
+        background-color: var(--clr-tertiary);
         padding: 1.8em 1.8em;
         width: auto;
             /*padding: 17px 70px;*/
         font-weight: var(--fw-bold);
         font-size: var(--fs-400);
-        color: var(--clr-primaryBlack);
+        color: var(--clr-LG);
         transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
     }
     #submit:hover {
         color: var(--clr-LG);
-        background-color: var(--clr-tertiary);
+        background-color: #8B0000;
+        border: 5px solid cyan;
         box-shadow: 0 0 15px var(--clr-primary);
     }
 
