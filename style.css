@@ -258,19 +258,20 @@ flex-direction: row;
     flex-direction: column;
     padding: 1rem;
     font-family: bptypewrite;
-    font-size: var(--fs-500);
+    font-size: var(--fs-400);
     color: white;
     width: 80vw;
 
 }
 
 .turner-btn a {
+    background: linear-gradient(1800deg, var(--clr-primary), black, whitesmoke);
     border: 5px solid var(--clr-LG);
     border-radius: 20px;
     color: var(--clr-LG);
     text-decoration: none;
     display: inline-block;
-    padding: 16px 26px;
+    padding: 6px 10px;
     margin-left: 1.7rem;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out; 
