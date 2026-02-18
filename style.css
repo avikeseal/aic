@@ -293,8 +293,8 @@ flex-direction: row;
 
 
 .home_button {
-    margin-left: 13rem;
-    margin-top: -5rem;
+    margin-left: 16rem;
+    margin-top: -4.5rem;
     display: flex;
     width: 50px;
 }
@@ -326,12 +326,20 @@ flex-direction: row;
 /*PROJECTS*/
 .pagesSection {
     margin-top: 1rem;
-    height: 100vh;
+    height: 100%;
     display:flex;
     border-top: 2px solid red;
-    background-color: black;
+    background-image: url(./assets/img/bgchoice2.png);
+    background-position: top;
+    background-repeat: no-repeat;
     flex-direction: column;
     padding: 3rem;
+}
+
+.pgSectionBg {
+    border: 1px solid yellow;
+    height: auto;
+
 }
 
 .page-content-border {
@@ -339,12 +347,14 @@ flex-direction: row;
     padding: 0.5rem;
     height: 100%;
 
-
 }
 .page-content {
     height: 100%;
-    border: 1px solid #fbf0d9;
-    background-color: var(--clr-tertiary);
+    border: 3px solid #fbf0d9;
+    background-color: black;
+    opacity: 0.6;
+    
+
 }
 
 
@@ -406,7 +416,7 @@ flex-direction: row;
         margin-left: 6.5rem;
     }
     .home_button {
-        margin-left: 15rem;
+        margin-left: 17rem;
     }
 }
 
@@ -415,19 +425,19 @@ flex-direction: row;
         margin-left: 6.5rem;
     }
     .home_button {
-        margin-left: 18rem;
+        margin-left: 17rem;
     }
     #homeButton {
-        margin-left: 16rem;
+        margin-left: 17rem;
     }
 }
 
 @media (min-width: 520px) {
     .home_button {
-        margin-left: 24rem;
+        margin-left: 23rem;
     }
     #homeButton {
-        margin-left: 22rem;
+        margin-left: 23rem;
     }
 }
 
@@ -439,7 +449,7 @@ flex-direction: row;
         margin-left: 28rem;
     }
     #homeButton {
-        margin-left: 26rem;
+        margin-left: 28rem;
     }
 }
 
@@ -614,6 +624,6 @@ flex-direction: row;
     }
 
     #homeButton {
-        margin-left: 39rem;
+        margin-left: 40rem;
     }
 }
