@@ -72,7 +72,7 @@ body {
     border: 1px solid var(--clr-LG);
     max-width: 810px;
     margin: 0 auto;
-    background-color: var(--clr-primaryBlack);
+    background-color: black;
     line-height: inherit;
     
 }
@@ -329,30 +329,34 @@ flex-direction: row;
     height: 100%;
     display:flex;
     border-top: 2px solid red;
-    background-image: url(./assets/img/bgchoice2.png);
-    background-position: top;
+    background-image: url(./assets/img/bgchoice4.png);
+    background-position: right;
     background-repeat: no-repeat;
+    background-size: cover;
     flex-direction: column;
     padding: 3rem;
 }
 
 .pgSectionBg {
-    border: 1px solid yellow;
+    border: 1px solid #ECE0BA;
     height: auto;
 
 }
 
 .page-content-border {
     border: 1px solid #fbf0d9;
-    padding: 0.5rem;
+    padding: 0.5em;
     height: 100%;
 
 }
 .page-content {
     height: 100%;
-    border: 3px solid #fbf0d9;
+    border: 3px solid white;
+    background-image: url(./assets/img/bgchoice5.png);
     background-color: black;
-    opacity: 0.6;
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: 0.8;
     
 
 }
