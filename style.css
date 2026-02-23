@@ -53,7 +53,7 @@ Medium Grey: #818181, rgb(129, 129, 129)
     
     --clr-primaryBlack: hsl(150, 100%, 0%);
     --clr-primary: #8B0000;
-    --clr-secondary: rgb(86, 5, 5);
+    --clr-secondary: linear-gradient(1800deg, var(--clr-primary), black, whitesmoke);
     --clr-tertiary: rgb(60, 6, 6);
     --clr-LG: rgb(199, 199, 199);
     --clr-MG: #818181;
@@ -392,6 +392,7 @@ flex-direction: row;
     padding: 1em;
     display: block;
     font-family: bptypewrite;
+    font-weight: var(--fw-bold);
 
 
 } 
@@ -570,9 +571,11 @@ flex-direction: row;
     }
     #submit:hover {
         color: var(--clr-LG);
-        background-color: navy;
-        border: 5px solid red;
-        box-shadow: 0 0 15px var(--clr-primary);
+        background-image: var(--clr-secondary);
+        border: 5px solid var(--clr-LG);
+        text-shadow: 7px -7px 15px;
+        box-shadow: 0 0 15px (--clr-primary);
+        border-radius: 3px;
     }
 
 
