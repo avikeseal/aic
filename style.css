@@ -72,9 +72,14 @@ body {
     border: 1px solid var(--clr-LG);
     max-width: 810px;
     margin: 0 auto;
-    background-color: black;
+    background-image: url(./assets/img/Screenshot\ 2026-02-22\ 124207.jpg);
+    background-repeat: no-repeat;
     line-height: inherit;
     
+}
+
+.body-bg {
+    background-color: black; 
 }
 
 /* HEADER */
@@ -82,6 +87,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    background-color: var(--clr-primaryBlack);
 }
 
 .header-flex-child {
@@ -401,7 +407,7 @@ flex-direction: row;
     text-align: center;
 	display: flex;
     flex-direction: column;
-	background: var(--clr-tertiary);
+	background: ;
 	width: auto;
 	height: 25vh;
 	justify-content: center;
