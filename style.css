@@ -70,7 +70,7 @@ Medium Grey: #818181, rgb(129, 129, 129)
 
 body {
     border: 1px solid var(--clr-LG);
-    background-image: linear-gradient(navy, whitesmoke);
+    background-image: linear-gradient(1800deg,var(--clr-tertiary), whitesmoke, black);
     max-width: 1000px;
     background-repeat: no-repeat;
     margin: 0 auto;
