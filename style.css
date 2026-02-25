@@ -413,6 +413,27 @@ flex-direction: row;
 /* MAIN CONTAINER */
 
 /* FOOTER */
+.footer {
+    padding: 2rem;
+    background: var(--clr-tertiary);
+
+}
+
+.footerSection {
+    flex-direction: column;
+    border: white;
+    height: auto;
+    border: 2px solid green;
+}
+
+.footerSection p {
+    text-align: center;
+    padding: 20px;
+    color: var(--clr-LG);
+    font-family: bptypewrite;
+    font-size: var(--fs-400);
+
+}
 
 
 /* MEDIA QUERIES FOR DEVICES */
