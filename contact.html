@@ -14,6 +14,8 @@
     <link href="https://www.1001fonts.com/herold-font.html?text=AVIKEINCHAINS&page=5" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 
@@ -41,17 +43,60 @@
         
         <div class="pagesSection" id="">
             <div class="page-content-border">
-                <div class="page-content"></div>
+                <div class="page-content">
+                    <h3>
+                        Need to comission a portrait for your furry friends?
+                        <br>
+                        <br>
+                        Need a metal flyer designed for your upcoming show?
+                        <br>
+                        <br>
+                        Need a responsive website that stands out and attract clients?
+                    </h3>
+                    <h2>YOUR SEARCH IS OVER...</h2> 
+                    <h3>FILL OUT THE FORM BELOW WITH A BRIEF IDEA OF YOUR PROJECT TO SET UP A MEETING.</h3>
+                    
+                    <form action="submit.php" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <br>
+                        <label for="message">Message:</label>
+                        <br>
+                        <textarea class="msgtxtarea" id="message" name="message" required></textarea>
+
+                        <!--the reCAPTCHA widget will appear in this div-->
+                       <!-- <div class="g-recaptcha" data-sitekey="6LcEqncsAAAAADCU5QfxNJo7NV733-SK3twpS3Ad"></div>-->
+                        
+                        <br>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <!--<p>
+                        EMAIL: 
+                        AVIKEINCHAINSFL@GMAIL.COM
+                    </p>-->
+                    <p>
+                        GITHUB:
+                        HTTPS://GITHUB.COM/AVIKESEAL
+                    </p>
+                    <p>
+                        INSTAGRAM: 
+                        @AVIKEINCHAINS
+                    </p>
+                </div>
             </div>
         </div>
         <div class="pgSectionBg">
 
         </div>
+        <!--<footer class="footer">
+            <p>&copy; <span id="year"></span>AVIKEINCHAINS.COM. All rights reserved.</p>
+            <p>designed by human</p>
+        </footer>-->
     </main>
-      <footer class="footer">
-        <p>&copy; <span id="year"></span>AVIKEINCHAINS.COM. All rights reserved.</p>
-        <p>designed by human</p>
-    </footer>
 </body>
 <script src="./script.js"></script>
 </html>

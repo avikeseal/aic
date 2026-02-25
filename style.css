@@ -70,7 +70,7 @@ Medium Grey: #818181, rgb(129, 129, 129)
 
 body {
     border: 1px solid var(--clr-LG);
-    background-image: linear-gradient(1800deg,var(--clr-tertiary), whitesmoke, black);
+    background-image: linear-gradient( black, var(--clr-primary), black );
     max-width: 1000px;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -234,15 +234,15 @@ flex-direction: row;
 
 /*PROJECTS CONTAINER*/
 .projects_container {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     
 }
 
 .hlborder {
     background-image: linear-gradient( black, var(--clr-primary));
-    
+    border: 1px solid white;
     padding: 1rem;
 }
 
@@ -290,72 +290,94 @@ flex-direction: row;
         box-shadow: 0 0 10px var(--clr-LG);
 }    
 
-.previous {
-}
-.next {
-}
-
-
-
-.home_button {
-    
-}
-
-.home_button a {
-    color: var(--clr-LG);
-    font-size: var(--fs-500);
-    background-color: var(--clr-tertiary);
-    width: 50px;
-    height: 50px;
-    padding-top: 10px;
-    padding-left: 11px;
-    border: 1px solid white;
-    border-radius: 100px;
-    border: 5px solid var(--clr-LG);
-
-}
-
-#homeButton {
-    display: flex;
-    width: 50px;
-    margin-top: -6rem;
-    margin-left: 14rem;
-}
-
 
 
 /*FAKE BACKDROP DESIGN*/
 
 /*PROJECTS*/
 .pagesSection {
-    height: 100%;
+    border: 2px solid yellow;
     display:flex;
-    background-color: bisque;
-    background-image: linear-gradient(1800deg, var(--clr-tertiary), black, var(--clr-primary));
+    background-image: linear-gradient(1800deg, var(--clr-tertiary), black, var(--clr-tertiary));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
     padding: 3rem;
-    padding-top: 1rem;
 }
 
 .page-content-border {
+    display: inline-block;
     border: 1px solid #fbf0d9;
     padding: 0.5rem;
-    height: 100%;
 
 }
 .page-content {
-    height: 100%;
-    overflow-y: auto;
+    height: 100vh;
+    overflow: auto;
     border: 3px solid white;
     background-color: black;
     background-position: right;
     background-repeat: no-repeat;
-    opacity: 0.3;
+    opacity: 0.7;
     
 
+}
+
+.page-content h3 {
+    padding: 2rem;
+    font-family: bptypewrite;
+    color: white;
+}
+
+.page-content h2 {
+    font-family: bptypewrite;
+    color: white;
+    padding: 2rem;
+
+}
+
+.page-content p {
+    margin-top: 1rem; 
+    font-family: bptypewrite;
+    height: 10vh;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+}
+
+.page-content form {
+    background-image: linear-gradient(1600deg, var(--clr-primaryBlack), red);
+    display: flex;
+    flex-direction: column;
+    font-family: bptypewrite;
+    font-size: 20px;
+    color: white;
+    width: auto;
+    padding: 1rem 2rem;
+}
+
+.page-content label {
+    margin-top: 12px;
+}
+
+#name {
+    width: auto;
+}
+
+#email {
+    width: auto;
+}
+
+.msgtxtarea {
+    height: 50px;
+    width: auto;
+}
+
+.page-content button {
+    margin-top: 12px;
+    width: 7rem;
 }
 
 
@@ -391,27 +413,26 @@ flex-direction: row;
 /* MAIN CONTAINER */
 
 /* FOOTER */
-.footer {
-    font-family: bptypewrite;
-    font-size: var(--fs-500);
-    color: var(--clr-LG);
-    text-align: center;
-	display: flex;
-    flex-direction: column;
-	background: var(--clr-tertiary);
-	width: auto;
-	height: 25vh;
-	justify-content: center;
-	align-items: center;
 
-}
-
-.footer p {
-
-    padding: 2rem;
-}
 
 /* MEDIA QUERIES FOR DEVICES */
+@media (min-width: 375px) and (max-width: 391px) {
+    /*.page-content p {
+        border: 1px solid red;
+        font-size: 15px;
+    }*/
+}
+
+@media (min-width: 375px) and (max-width: 661px) {
+     .page-content p {
+        font-size: 13px;
+    }
+
+    /*.page-content label {
+        border: 1px solid yellow;
+        padding-left: 2px;
+    }*/
+}
 @media (min-width: 400px) and (max-width: 413px) {
     #submit {
         margin-left: 6.5rem;
@@ -601,7 +622,7 @@ flex-direction: row;
         width: auto;
         display: flex;
         flex-direction: row;
-        border-top: 2px solid red;
+        border-top: 1px solid white;
     }
 
     .topNav a {
@@ -629,6 +650,15 @@ flex-direction: row;
 
     #homeButton {
         margin-left: 40rem;
+    }
+
+    .page-content p {
+    margin-top: 1rem; 
+    font-family: bptypewrite;
+    height: 10vh;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 20px;
     }
 }
 
