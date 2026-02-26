@@ -391,6 +391,13 @@ flex-direction: row;
     color: var(--clr-LG);
 }
 
+/* README */
+.rmcontent p {
+    padding: 1rem;
+    color: white;
+
+}
+
 
 
 
