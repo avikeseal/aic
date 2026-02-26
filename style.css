@@ -434,7 +434,6 @@ flex-direction: row;
     flex-direction: column;
     border: white;
     height: auto;
-    border: 2px solid green;
 }
 
 .footerSection p {
