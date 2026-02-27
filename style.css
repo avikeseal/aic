@@ -109,7 +109,19 @@ body {
     
 }
 
-.brand-text {
+.logo {
+    margin-left: -1.5rem;
+    padding: 1rem;
+}
+
+.logo img {
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+
+/*.brand-text {
         font-family: ghastlypanic;
       text-align: center;
       font-size: var(--fs-1200);
@@ -128,7 +140,7 @@ body {
       width: max-content;
       margin-top: 4rem;
       margin-left: -0.5rem;
-}
+}*/
 
 #pagehl {
     font-size:8.5rem;
@@ -554,7 +566,18 @@ flex-direction: row;
         
     }
 
-    .brand-text {
+    .logo {
+        display: flex;
+        flex-direction: row;
+    margin-left: -1.5rem;
+}
+
+    .logo img {  
+    width: 320px;
+    height: auto;
+}
+
+    /*.brand-text {
         margin-top: 0.5rem;
         margin-left: 2rem;
     }
@@ -564,10 +587,11 @@ flex-direction: row;
         width: max-content;
         margin-top: 3rem;
         margin-left: -0.5rem;
-    }
+    }*/
 
     .header-flex-child:nth-child(2) {
     flex-direction: row;
+    margin-left: -1rem;
         margin-top:2.4rem;
         padding: 1.8rem;
         background-position: left 5px center;
@@ -657,6 +681,7 @@ flex-direction: row;
 
 
     .topNav {
+        margin-top: -1rem;
         width: auto;
         display: flex;
         flex-direction: row;
@@ -701,13 +726,16 @@ flex-direction: row;
 }
 
 @media (min-width: 992px) {
+
+    .logo img {
+        width: 370px;
+    }
     .header-flex-child {
         flex-grow: 1;
         justify-content: center;
         align-items: center;
         flex-direction: row; /* keep this row for all resolutions */
         display: flex;
-        margin-left: 1rem;
 
     }
         .header-flex-child:nth-child(2) {
@@ -729,5 +757,30 @@ flex-direction: row;
         box-shadow: 2px 2px;
         
 
+    }
+
+    
+    .header-flex-child:nth-child(4) {
+        padding: 4rem;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        
+    }
+
+    .header-flex-child:nth-child(4) a {
+        margin-bottom: -5rem;
+        margin-left: -6rem;
+        object-fit: cover;
+
+    }
+
+    .header-flex-child:nth-child(4) img {
+        display: flex;
+        max-width: 70px;
+        height: auto;
     }
 }
