@@ -324,6 +324,7 @@ flex-direction: row;
 
 }
 .page-content {
+    display: flex;
     height: 100vh;
     overflow: auto;
     border: 3px solid white;
@@ -333,6 +334,10 @@ flex-direction: row;
     opacity: 0.7;
     
 
+}
+
+#page-content {
+    height: 70vw;
 }
 
 .page-content h3 {
