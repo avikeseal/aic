@@ -342,6 +342,12 @@ flex-direction: row;
 
 }
 
+.page-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 #page-content {
     height: 70vw;
 }
@@ -418,6 +424,16 @@ flex-direction: row;
 .rmcontent p {
     padding: 1rem;
     color: white;
+
+}
+
+.section-brief {
+    background-color: var(--clr-tertiary);
+    margin-top: -6rem;
+    height: 20vh;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
 
 }
 
