@@ -429,7 +429,7 @@ flex-direction: row;
     z-index: 2;
     background-color: var(--clr-tertiary);
     margin-top: -5rem;
-    height: 20vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
 
@@ -439,10 +439,10 @@ flex-direction: row;
     background-color: var(--clr-font);
     margin-right: -1rem;
     margin-left: 1rem;
-    margin-top: -130px;
+    margin-top: -250px;
     z-index: 1;
     border: 1px solid white;
-    height: 20vh;
+    height: 40vh;
 }
 
 
