@@ -33,6 +33,13 @@ Medium Grey: #818181, rgb(129, 129, 129)
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'hardcore';
+    src: url('./assets/fonts/frakturika/FRAKS___.ttf');
+    font-weight: var(--fs-600);
+    font-style: normal;
+}
+
 :root {
     --ff-sans: 'Poppins', sans-serif;
     --fw-light: 200;
@@ -259,15 +266,15 @@ flex-direction: row;
 .projects_headline {
     display: flex;
     flex-direction: row;
+    padding: 10px;
 }
 
 .projects_headline h1 {
     margin-top: 1rem;
-    margin-left: 1em;
     height: 100%;
-    font-family: bptypewrite;
+    font-family: hardcore;
     color: var(--clr-LG);
-    font-size: var(--fs-900);
+    font-size: var(--fs-1200);
 }
 
 /*.turner-btn {
@@ -310,8 +317,8 @@ flex-direction: row;
     background-image: linear-gradient(1800deg, var(--clr-tertiary), black, var(--clr-tertiary));
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     flex-direction: column;
+    background-size: cover;
     padding: 3rem;
 }
 
@@ -326,6 +333,7 @@ flex-direction: row;
     height: 100vh;
     overflow: auto;
     border: 3px solid white;
+    flex-direction: column;
     background-color: black;
     background-position: right;
     background-repeat: no-repeat;
@@ -356,9 +364,9 @@ flex-direction: row;
     font-family: bptypewrite;
     height: 10vh;
     padding: 1rem 2rem;
-    flex-direction: column;
     color: white;
     font-size: 20px;
+    flex-direction: row;
 }
 
 .page-content form {
