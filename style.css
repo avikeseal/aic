@@ -78,7 +78,7 @@ Medium Grey: #818181, rgb(129, 129, 129)
 
 body {
     border: 1px solid var(--clr-LG);
-    background-image: linear-gradient( black,black, var(--clr-primary), black );
+    background-image: linear-gradient( var(--clr-primary),black, var(--clr-primary), black );
     max-width: 1000px;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -336,7 +336,7 @@ flex-direction: row;
     background-color: black;
     background-position: right;
     background-repeat: no-repeat;
-    opacity: 0.7;
+    opacity: 0.6;
     
 
 }
@@ -436,7 +436,7 @@ flex-direction: row;
 }
 
 .section-shadow {
-    background-color: var(--clr-font);
+    background-color: var(--clr-primaryBlack);
     margin-right: -1rem;
     margin-left: 1rem;
     margin-top: -250px;
