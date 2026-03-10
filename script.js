@@ -1,0 +1,101 @@
+
+console.log('My script is running')
+let variable = '420';
+console.log('The value of variable is: ', variable);
+
+const textElement = document.getElementById('type-text');
+const phrases = ['COMMISSION HANDRAWN SKETCHES',
+    'DIVERSE PRINT SIZES AVAILABLE']
+let phraseIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function type() {
+    const currentPhrase = phrases[phraseIndex];
+
+    if (isDeleting) {
+        textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+    }
+
+    let typeSpeed = isDeleting ? 100 : 200; // Speed adjustment
+
+    if (!isDeleting && charIndex == currentPhrase.length) {
+        typeSpeed = 6000; //pause at the end
+        isDeleting = true;
+    }
+    else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        typeSpeed = 3000; //pause before starting new word
+    }
+
+    setTimeout(type, typeSpeed);
+}
+
+type();
+
+
+/*Splitting(); //process all elements with data-spiltting attribute
+
+const chars =document.querySelectorAll(".split .char");
+
+gsap.from(chars, {
+    /*dutration: 1.0,
+    autoAlpha: 0,
+    stagger: 0.
+
+const sentences = [
+    'COMMISSION AUTHENTIC HANDRAWN SKETCHES',
+    'DIVERSE PRINT SIZES AVAILBLE FROM 8 X 10 TO 24 X 36 INCHES',
+    'AFFORDABLE OPTIONS INCLUDE 5 x 7 AND 8 X 8 (SQUARE) INCHES'
+];
+
+let current = 0;
+function typeSentence(sentence) {
+    const el = document.querySelector(".split");
+    el.innerHTML = '';
+    
+
+    setTimeout(() => {
+        el.textContent = sentence;
+    })
+    
+        setTimeout(() => {
+                Splitting({ target: el });
+
+                const chars = el.querySelectorAll(".char");
+
+                console.log('chars found:', chars.length); //should be > 0
+                console.log('chars:', chars); // inspect them
+
+                // Type in 
+                let tl = gsap.timeline();
+                tl.from(chars, {
+                    autoAlpha: 0,
+                    duration: 0.01,
+                    stagger: 0.08
+                })
+                //Hold it for a moment
+                .to({}, {duration: 1.5})
+                //Erase it (reverse stagger)
+                .to(chars, {
+                    autoAlpha: 0,
+                    duration: 0.01,
+                    stagger: 0.04 //erase faster than type
+                })
+                //when done move to the next sentence
+                .call(() => {
+                    current = (current + 1) % sentences.length;
+                    typeSentence(sentences[current]);
+                });
+
+            }, 50);
+        }
+
+
+
+        typeSentence(sentences[current]);*/

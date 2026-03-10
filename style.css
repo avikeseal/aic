@@ -60,7 +60,7 @@ Medium Grey: #818181, rgb(129, 129, 129)
     
     --clr-primaryBlack: hsl(150, 100%, 0%);
     --clr-primary: #8B0000;
-    --clr-font: #8F8F9D;
+    --clr-font: #fbf0d9;
     --clr-secondary: linear-gradient(1800deg, var(--clr-primary), black, #8F8F9D);
     --clr-tertiary: rgb(60, 6, 6);
     --clr-LG: rgb(199, 199, 199);
@@ -341,13 +341,27 @@ flex-direction: row;
 
 }
 /*CONTACT*/
+.cursor 
+    { 
+        animation: blink 1s infinite; 
+        @keyframes blink { 50% { opacity: 0; } }
+        color: clr(--clr-font);
+
+}
+
+
 .page-content img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-#page-content {
+.split {
+    font-family: hardcore ;
+    padding: 1rem;
+    color: #fbf0d9;
+    font-size: 50px;
+
 }
 
 .page-content h3 {
@@ -356,12 +370,12 @@ flex-direction: row;
     color: white;
 }
 
-.page-content h2 {
+/*.page-content h2 {
     font-family: bptypewrite;
     color: white;
     padding: 2rem;
 
-}
+}*/
 
 .page-content p {
     margin-top: 1rem; 
