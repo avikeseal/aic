@@ -38,7 +38,7 @@ function type() {
 
 type();
 
-
+//README 
 /*Splitting(); //process all elements with data-spiltting attribute
 
 const chars =document.querySelectorAll(".split .char");

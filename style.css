@@ -78,7 +78,7 @@ Medium Grey: #818181, rgb(129, 129, 129)
 
 body {
     border: 1px solid var(--clr-LG);
-    background-image: linear-gradient( var(--clr-primary),black, var(--clr-primary), black );
+   background-image: linear-gradient( var(--clr-primary),black, var(--clr-primary), black );
     max-width: 1000px;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -87,7 +87,7 @@ body {
 }
 
 .body-bg {
-    background-color: black;
+    background-image: linear-gradient( var(--clr-primary),black, var(--clr-primary), black );
 }
 
 /* HEADER */
@@ -95,7 +95,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-image:linear-gradient( black, var(--clr-primary));
+    background-image: url(./assets/img/sitebgheader.png);
+    /*background-image:linear-gradient( black, var(--clr-primary));*/
 }
 
 .header-flex-child {
@@ -164,7 +165,9 @@ flex-direction: row;
       display: flex;
       border-radius: 5px;
       padding: 1.5rem;
-      border: 3px solid var(--clr-font);
+      border: 2px solid var(--clr-font);
+      background-color: var(--clr-tertiary);
+      opacity: 0.8;
       background-image: linear-gradient(var(--clr-tertiary), black);
       background-image:url('./assets/img/srchicon.png');
       background-size: 40px;
@@ -182,11 +185,9 @@ flex-direction: row;
 	cursor: pointer;
      width: 100%;
       font-size: var(--fs-400);
-      border-radius: 5px solid var(--clr-primary);
       margin-left: 2.5em;
       background-image: url('./assets/img/srchinputbg.png');
       background-position: left;
-      box-shadow: 2px 2px;
       
 
 }
@@ -199,7 +200,7 @@ flex-direction: row;
 
 }
 .header-flex-child:nth-child(3) {
-    border: 5px solid var(--clr-LG);
+    border: 2px solid var(--clr-LG);
       flex-direction: row;
       border-radius: 3px;
       width: 100%;
@@ -211,7 +212,7 @@ flex-direction: row;
 }
 #submit {
     margin-left: 6rem;
-    background-color: var(--clr-secondary);
+    background-color: var(--clr-primary);
         width: 10vw;
     padding: 1em 4em;
         /*padding: 17px 70px;*/
@@ -220,10 +221,6 @@ flex-direction: row;
     font-size: var(--fs-400);
     color: var(--clr-font);
 }
-
-
-
-
 .header-flex-child:nth-child(4) {
       flex-direction: row;
       display: flex;
@@ -336,7 +333,7 @@ flex-direction: row;
     background-color: black;
     background-position: right;
     background-repeat: no-repeat;
-    opacity: 0.6;
+    opacity: 0.8;
     
 
 }
@@ -379,12 +376,11 @@ flex-direction: row;
 
 .page-content p {
     margin-top: 1rem; 
-    font-family: bptypewrite;
     height: 10vh;
     padding: 1rem 2rem;
     color: white;
-    font-size: 20px;
     flex-direction: row;
+    font-family: bptypewrite;
 }
 
 .page-content form {
@@ -434,8 +430,10 @@ flex-direction: row;
 
 /* README */
 .rmcontent p {
+    font-family: bptypewrite;
     padding: 1rem;
-    color: white;
+    color: var(--clr-font);
+    font-size: var(--fs-600);
 
 }
 
@@ -685,7 +683,7 @@ flex-direction: row;
     }
 
     .header-flex-child:nth-child(3) {
-        border: 5px solid var(--clr-LG);
+        border: 3px solid var(--clr-LG);
         flex-direction: row;
         border-radius: 3px;
         width: 100%;
@@ -697,7 +695,7 @@ flex-direction: row;
     }
     #submit {
         margin-left: -1rem;
-        margin-top: 1.5rem;
+        margin-top: 1.6rem;
         height: 5px;
         padding: 1.8em 1.8em;
         width: auto;
@@ -705,12 +703,11 @@ flex-direction: row;
         font-weight: var(--fw-bold);
         font-size: var(--fs-400);
         color: var(--clr-font);
-        transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
     }
     #submit:hover {
         color: var(--clr-LG);
         background-image: linear-gradient(1800deg, var(--clr-primary), black, var(--clr-font));
-        border: 5px solid var(--clr-LG);
+        border: 3px solid var(--clr-LG);
         text-shadow: 7px -7px 15px;
         box-shadow: 0 0 15px (--clr-primary);
         border-radius: 3px;
@@ -812,7 +809,6 @@ flex-direction: row;
         font-weight: var(--fw-bold);
         font-size: var(--fs-400);
         color: var(--clr-font);
-        transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
     }
 
   .logo {
@@ -852,6 +848,7 @@ flex-direction: row;
 
     }
 
+
     
     .header-flex-child:nth-child(4) {
         padding: 4rem;
@@ -877,3 +874,4 @@ flex-direction: row;
         height: auto;
     }
 }
+ 
