@@ -211,14 +211,14 @@ flex-direction: row;
 }
 #submit {
     margin-left: 6rem;
-    background-color: var(--clr-font);
+    background-color: var(--clr-secondary);
         width: 10vw;
     padding: 1em 4em;
         /*padding: 17px 70px;*/
     font-family: bptypewrite;
     font-weight: var(--fw-bold);
     font-size: var(--fs-400);
-    color: var(--clr-primaryBlack);
+    color: var(--clr-font);
 }
 
 
@@ -508,7 +508,7 @@ flex-direction: row;
 .footerSection p {
     text-align: center;
     padding: 20px;
-    color: var(--clr-font);
+    color: var(--clr-MG);
     font-family: bptypewrite;
     font-size: var(--fs-400);
 
@@ -699,13 +699,12 @@ flex-direction: row;
         margin-left: -1rem;
         margin-top: 1.5rem;
         height: 5px;
-        background-color: var(--clr-font);
         padding: 1.8em 1.8em;
         width: auto;
             /*padding: 17px 70px;*/
         font-weight: var(--fw-bold);
         font-size: var(--fs-400);
-        color: var(--clr-primaryBlack);
+        color: var(--clr-font);
         transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
     }
     #submit:hover {
@@ -807,13 +806,12 @@ flex-direction: row;
         margin-top: 2.5rem;
         margin-left: -1rem;
         height: 5px;
-        background-color: var(--clr-font);
         padding: 1.8em 1.8em;
         width: auto;
             /*padding: 17px 70px;*/
         font-weight: var(--fw-bold);
         font-size: var(--fs-400);
-        color: var(--clr-primaryBlack);
+        color: var(--clr-font);
         transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
     }
 

@@ -4,7 +4,7 @@ let variable = '420';
 console.log('The value of variable is: ', variable);
 
 const textElement = document.getElementById('type-text');
-const phrases = ['COMMISSION HANDRAWN SKETCHES',
+const phrases = ['COMMISSION HAND DRAWN SKETCHES',
     'DIVERSE PRINT SIZES AVAILABLE']
 let phraseIndex = 0;
 let charIndex = 0;
@@ -24,13 +24,13 @@ function type() {
     let typeSpeed = isDeleting ? 100 : 200; // Speed adjustment
 
     if (!isDeleting && charIndex == currentPhrase.length) {
-        typeSpeed = 6000; //pause at the end
+        typeSpeed = 9000; //pause at the end
         isDeleting = true;
     }
     else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         phraseIndex = (phraseIndex + 1) % phrases.length;
-        typeSpeed = 3000; //pause before starting new word
+        typeSpeed = 8000; //pause before starting new word
     }
 
     setTimeout(type, typeSpeed);
