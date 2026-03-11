@@ -21,16 +21,16 @@ function type() {
         charIndex++;
     }
 
-    let typeSpeed = isDeleting ? 100 : 200; // Speed adjustment
+    let typeSpeed = isDeleting ? 80 : 80; // Speed adjustment
 
     if (!isDeleting && charIndex == currentPhrase.length) {
-        typeSpeed = 9000; //pause at the end
+        typeSpeed = 2000; //pause at the end
         isDeleting = true;
     }
     else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         phraseIndex = (phraseIndex + 1) % phrases.length;
-        typeSpeed = 8000; //pause before starting new word
+        typeSpeed = 1000; //pause before starting new word
     }
 
     setTimeout(type, typeSpeed);
