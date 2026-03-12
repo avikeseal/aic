@@ -79,7 +79,7 @@ Medium Grey: #818181, rgb(129, 129, 129)
 body {
     border: 1px solid var(--clr-LG);
    /*background-image: linear-gradient( var(--clr-primary),black, var(--clr-primary), black );*/
-    background-image: url(./assets/img/sitebg2.png);
+    background-image: url(./assets/img/sitebg3.png);
     background-size: cover;
     background-attachment: fixed;
     max-width: 1000px;
