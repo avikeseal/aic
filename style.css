@@ -344,12 +344,32 @@ flex-direction: row;
 }
 
 .section-brief {
+    z-index: 2;
+    background-color: var(--clr-tertiary);
+    margin-top: -5rem;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section-shadow {
+    background-color: var(--clr-primaryBlack);
+    margin-right: -1rem;
+    margin-left: 1rem;
+    margin-top: -250px;
+    z-index: 1;
+    border: 1px solid white;
+    height: 40vh;
+}
+
+/*.section-brief {
     display: flex;
     flex-direction: row;
     
-}
+}*/
 
-.section-brief h1 {
+/*.section-brief h1 {
     width: 50%;
     padding: 10px;
     font-family: bptypewrite;
@@ -357,11 +377,11 @@ flex-direction: row;
 }
 
 .section-brief  p {
-    padding: 10px;
+    border: 1px solid yellow;
     width: 50%;
     color: var(--clr-font);
     font-family: bptypewrite;
-    font-size: var(--fs-500);
+    height: auto;
 }
 
 .section-brief a {
@@ -509,25 +529,7 @@ flex-direction: row;
 
 }
 
-.section-brief {
-    z-index: 2;
-    background-color: var(--clr-tertiary);
-    margin-top: -5rem;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
 
-}
-
-.section-shadow {
-    background-color: var(--clr-primaryBlack);
-    margin-right: -1rem;
-    margin-left: 1rem;
-    margin-top: -250px;
-    z-index: 1;
-    border: 1px solid white;
-    height: 40vh;
-}
 
 
 
@@ -596,6 +598,31 @@ flex-direction: row;
     .rmpage-content {
         height: 30rem;
     }
+
+     .section-shadow {
+        margin-top: -11rem;
+    }
+
+    .section-brief h1 {
+        font-family: bptypewrite;
+        color: var(--clr-font);
+    }
+
+    .section-brief p {
+        padding: 10px;
+        font-family: bptypewrite;
+        color: var(--clr-font);
+    }
+
+    .section-brief img {
+        display: none;
+    }
+
+    
+
+
+
+   
 }
 
 @media (min-width: 375px) and (max-width: 661px) {
@@ -902,6 +929,40 @@ flex-direction: row;
     background-position: right;
     background-repeat: no-repeat;
     opacity: 0.8;
+}
+
+.section-brief h1 {
+    width: 50%;
+    padding: 10px;
+    font-family: bptypewrite;
+    color: var(--clr-font);
+}
+
+.section-brief  p {
+    padding: 10px;
+    border: 1px solid yellow;
+    width: 50%;
+    color: var(--clr-font);
+    font-family: bptypewrite;
+    font-size: var(--fs-500);
+}
+
+.section-brief a {
+    width: 50%;
+    padding: 10px;
+    margin-left: 450px;
+      height: 300px;
+    margin-top: -180px;
+    padding: 10px;
+}
+
+
+
+.section-brief img {
+    border: 1px solid yellow;
+    width: 410px;
+    height: 280px;
+    
 }
 }
 
