@@ -363,6 +363,22 @@ flex-direction: row;
     height: 40vh;
 }
 
+.section-shadow {
+        margin-top: -11rem;
+    }
+
+    .section-brief h1 {
+        padding: 5px;
+        font-family: bptypewrite;
+        color: var(--clr-font);
+    }
+
+    .section-brief p {
+        padding: 5px;
+        font-family: bptypewrite;
+        color: var(--clr-font);
+    }
+
 /*.section-brief {
     display: flex;
     flex-direction: row;
@@ -597,21 +613,6 @@ flex-direction: row;
     }*/
     .rmpage-content {
         height: 30rem;
-    }
-
-     .section-shadow {
-        margin-top: -11rem;
-    }
-
-    .section-brief h1 {
-        font-family: bptypewrite;
-        color: var(--clr-font);
-    }
-
-    .section-brief p {
-        padding: 10px;
-        font-family: bptypewrite;
-        color: var(--clr-font);
     }
 
     .section-brief img {
