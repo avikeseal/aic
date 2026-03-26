@@ -367,13 +367,27 @@ flex-direction: row;
         margin-top: -11rem;
     }
 
-    .section-brief h1 {
+.codelink {
+    display: flex;
+    margin-top: 195px;
+    padding: 10px;
+    height: 50px;
+    justify-content: right;
+    align-items: right;
+}
+
+.codelink a {
+    font-family: bptypewrite;
+    color: var(--clr-font);
+}
+
+.section-brief h1 {
         padding: 5px;
         font-family: bptypewrite;
         color: var(--clr-font);
     }
 
-    .section-brief p {
+.section-brief p {
         padding: 5px;
         font-family: bptypewrite;
         color: var(--clr-font);
@@ -964,6 +978,14 @@ flex-direction: row;
     width: 410px;
     height: 280px;
     
+}
+
+.section-shadow {
+    margin-top: -17rem;
+}
+
+codelink a {
+    margin-top: 20px;
 }
 }
 
