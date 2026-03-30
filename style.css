@@ -377,6 +377,7 @@ flex-direction: row;
 }
 
 .codelink a {
+    text-decoration: none;
     font-family: bptypewrite;
     color: var(--clr-font);
 }
