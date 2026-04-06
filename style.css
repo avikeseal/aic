@@ -323,6 +323,8 @@ flex-direction: row;
     padding: 3rem;
 }
 
+
+
 .page-content-border {
     display: inline-block;
     border: 1px solid #fbf0d9;
@@ -343,12 +345,63 @@ flex-direction: row;
 }
 
 .section-brief {
+    z-index: 2;
+    background-color: var(--clr-tertiary);
+    margin-top: -5rem;
+    height: 40vh;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
+
+}
+
+.section-shadow {
+    background-color: var(--clr-primaryBlack);
+    margin-right: -1rem;
+    margin-left: 1rem;
+    margin-top: -250px;
+    z-index: 1;
+    border: 1px solid white;
+    height: 40vh;
+}
+
+.section-shadow {
+        margin-top: -11rem;
+    }
+
+.codelink {
+    display: flex;
+    margin-top: 195px;
+    padding: 10px;
+    height: 50px;
+    justify-content: right;
+    align-items: right;
+}
+
+.codelink a {
+    text-decoration: none;
+    font-family: bptypewrite;
+    color: var(--clr-font);
 }
 
 .section-brief h1 {
+        padding: 5px;
+        font-family: bptypewrite;
+        color: var(--clr-font);
+    }
+
+.section-brief p {
+        padding: 5px;
+        font-family: bptypewrite;
+        color: var(--clr-font);
+    }
+
+/*.section-brief {
+    display: flex;
+    flex-direction: row;
+    
+}*/
+
+/*.section-brief h1 {
     width: 50%;
     padding: 10px;
     font-family: bptypewrite;
@@ -356,11 +409,11 @@ flex-direction: row;
 }
 
 .section-brief  p {
-    padding: 10px;
+    border: 1px solid yellow;
     width: 50%;
     color: var(--clr-font);
     font-family: bptypewrite;
-    font-size: var(--fs-500);
+    height: auto;
 }
 
 .section-brief a {
@@ -508,25 +561,7 @@ flex-direction: row;
 
 }
 
-.section-brief {
-    z-index: 2;
-    background-color: var(--clr-tertiary);
-    margin-top: -5rem;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
 
-}
-
-.section-shadow {
-    background-color: var(--clr-primaryBlack);
-    margin-right: -1rem;
-    margin-left: 1rem;
-    margin-top: -250px;
-    z-index: 1;
-    border: 1px solid white;
-    height: 40vh;
-}
 
 
 
@@ -595,11 +630,33 @@ flex-direction: row;
     .rmpage-content {
         height: 30rem;
     }
+
+    .section-brief img {
+        display: none;
+    }
+
+    
+
+
+
+   
 }
 
 @media (min-width: 375px) and (max-width: 661px) {
      .page-content p {
         font-size: 13px;
+    }
+
+    .section-brief {
+        height: 18rem;
+    }
+
+     .section-brief img {
+        display: none;
+    }
+
+    .section-shadow {
+        height: 15rem;
     }
 
     /*.page-content label {
@@ -658,6 +715,19 @@ flex-direction: row;
     #homeButton {
         margin-left: 28rem;
     }
+
+    .section-brief {
+        height: 10rem;
+    }
+
+    .section-shadow {
+        height: 11rem;
+        margin-top: -6rem;
+    }
+
+    .codelink a {
+        margin-top: -70px;
+    }
 }
 
 @media (min-width: 767px) and (max-width: 768px) {
@@ -669,6 +739,10 @@ flex-direction: row;
     }
      #homeButton {
         margin-left: 37rem;
+    }
+
+    .section-brief img {
+        display: none;
     }
 } 
 
@@ -888,6 +962,7 @@ flex-direction: row;
 }
 
 .fp_two {
+    flex-direction: column;
      display: flex;
     padding: 0.5rem;
     border: 1px solid white;
@@ -904,6 +979,62 @@ flex-direction: row;
     background-position: right;
     background-repeat: no-repeat;
     opacity: 0.8;
+}
+
+.fptwo_heading{
+    border: 1px solid white;
+    height: 70px;
+}
+
+.fptwo_content {
+    border: 1px solid white;
+    height: 270px;
+}
+
+.section-brief {
+    height: 22rem;
+}
+
+.section-brief h1 {
+    width: 50%;
+    padding: 10px;
+    font-family: bptypewrite;
+    color: var(--clr-font);
+}
+
+.section-brief  p {
+    padding: 10px;
+    width: 50%;
+    color: var(--clr-font);
+    font-family: bptypewrite;
+    font-size: var(--fs-500);
+}
+
+.section-brief a {
+    width: 50%;
+    padding: 10px;
+    margin-left: 450px;
+      height: 300px;
+    margin-top: -180px;
+    padding: 10px;
+}
+
+
+
+.section-brief img {
+    border: 1px solid yellow;
+    width: 410px;
+    height: 280px;
+    
+}
+
+.section-shadow {
+    height: -30rem;
+}
+
+
+codelink a {
+    margin-top: 20px;
 }
 }
 
@@ -993,5 +1124,8 @@ flex-direction: row;
         max-width: 70px;
         height: auto;
     }
-}
+
+    .section-brief {
+        height: 17rem;
+    }
 }
