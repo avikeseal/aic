@@ -27,9 +27,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.99150697"
-     inkscape:cx="533.02701"
-     inkscape:cy="54.966835"
+     inkscape:zoom="1"
+     inkscape:cx="481.5"
+     inkscape:cy="216.5"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -38,6 +38,42 @@
      inkscape:current-layer="g2" />
   <defs
      id="defs1">
+    <linearGradient
+       id="linearGradient17"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0.76371306"
+         id="stop17" />
+      <stop
+         style="stop-color:#f00707;stop-opacity:0;"
+         offset="1"
+         id="stop18" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient16"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#fb0000;stop-opacity:1;"
+         offset="0"
+         id="stop15" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop16" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient14"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#fb0000;stop-opacity:1;"
+         offset="0"
+         id="stop13" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0.62728548"
+         id="stop14" />
+    </linearGradient>
     <linearGradient
        id="linearGradient9"
        inkscape:collect="always">
@@ -66,36 +102,116 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter8"
-       x="-0.060420871"
-       y="-0.34231459"
-       width="1.1208417"
-       height="1.6846292">
+       x="-0.060865079"
+       y="-0.34483126"
+       width="1.1217302"
+       height="1.6896625">
       <feGaussianBlur
          inkscape:collect="always"
-         stdDeviation="0.060781374"
+         stdDeviation="0.19251471"
          id="feGaussianBlur8" />
     </filter>
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter9"
-       x="-0.33102201"
-       y="-1.3146844"
-       width="1.662044"
-       height="3.6293689">
+       x="-0.34852009"
+       y="-1.3841797"
+       width="1.6970402"
+       height="3.7683593">
       <feGaussianBlur
          inkscape:collect="always"
-         stdDeviation="0.9891304"
+         stdDeviation="1.2911728"
          id="feGaussianBlur9" />
     </filter>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient9"
+       xlink:href="#linearGradient14"
        id="linearGradient10"
        x1="136.09962"
        y1="370.15403"
        x2="933.84516"
        y2="370.15403"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.99675559,0,0,0.97141524,-4.5359136,-270.82647)" />
+    <rect
+       x="174.01195"
+       y="268.86273"
+       width="968.45795"
+       height="187.4866"
+       id="rect7" />
+    <rect
+       x="174.01195"
+       y="268.86273"
+       width="968.45795"
+       height="187.4866"
+       id="rect8" />
+    <rect
+       x="174.01195"
+       y="268.86273"
+       width="968.45795"
+       height="187.4866"
+       id="rect11" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient9"
+       id="linearGradient11"
+       gradientUnits="userSpaceOnUse"
+       x1="136.09962"
+       y1="370.15403"
+       x2="933.84516"
+       y2="370.15403"
+       gradientTransform="translate(-60.590989,211.72869)" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter13"
+       x="-0.060420871"
+       y="-0.34231459"
+       width="1.1208417"
+       height="1.6846292">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.060781369"
+         id="feGaussianBlur13" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter14"
+       x="-0.33048368"
+       y="-1.3125464"
+       width="1.6609674"
+       height="3.6250928">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.97983809"
+         id="feGaussianBlur14" />
+    </filter>
+    <rect
+       x="174.01195"
+       y="268.86273"
+       width="968.45795"
+       height="187.4866"
+       id="rect15" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient16"
+       id="linearGradient15"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.96394142,0,0,1.3019985,18.437116,117.31672)"
+       x1="136.09962"
+       y1="370.15403"
+       x2="933.84516"
+       y2="370.15403" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient17"
+       id="linearGradient18"
+       x1="347.78137"
+       y1="18.099136"
+       x2="722.16327"
+       y2="722.20905"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <g
@@ -108,50 +224,135 @@
        transform="matrix(1.1056551,0,0,0.97389212,-1.0263099,3.5469693)">
       <g
          id="g9"
-         transform="matrix(0.75922376,0,0,0.49209521,16.273641,104.30323)">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;opacity:1;fill:#000000;fill-opacity:1;stroke:#92f21d;stroke-width:22.679;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers;filter:url(#filter9)"
-           x="237.40291"
-           y="78.086105"
-           id="text9"
-           inkscape:label=".comblur"><tspan
-             sodipodi:role="line"
-             id="tspan9"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.75559984px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:22.679"
-             x="237.40291"
-             y="78.086105">.com</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;opacity:1;mix-blend-mode:screen;fill:#ffffff;fill-opacity:1;stroke:#92f21d;stroke-width:22.679;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers"
-           x="237.78029"
-           y="77.708725"
-           id="text8"
-           inkscape:label=".commain"><tspan
-             sodipodi:role="line"
-             id="tspan8"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.75559984px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:22.679"
-             x="237.78029"
-             y="77.708725">.com</tspan></text>
+         transform="matrix(0.76174849,0,0,0.44552801,15.815579,109.4627)">
+        <g
+           id="g7"
+           transform="matrix(1.3171347,0,0,2.0321271,-0.13592915,-325.54658)">
+          <g
+             id="g14"
+             transform="matrix(0.72871616,0,0,0.95743148,51.210348,9.0071548)">
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;opacity:1;fill:#000000;fill-opacity:1;stroke:#92f21d;stroke-width:22.679;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers;filter:url(#filter14)"
+               x="237.40291"
+               y="78.086105"
+               id="text14"
+               inkscape:label=".comblur"
+               transform="matrix(0.79393097,0,0,0.39268753,-9.0095756,168.58888)"><tspan
+                 sodipodi:role="line"
+                 id="tspan14"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:22.679"
+                 x="237.40291"
+                 y="78.086105">.com</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;opacity:1;fill:#000000;fill-opacity:1;stroke:#92f21d;stroke-width:22.679;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers;filter:url(#filter9)"
+               x="237.40291"
+               y="78.086105"
+               id="text9"
+               inkscape:label=".comblur"
+               transform="matrix(0.78397489,0,0,0.41957372,-6.3954891,166.3432)"><tspan
+                 sodipodi:role="line"
+                 id="tspan9"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:22.679"
+                 x="237.40291"
+                 y="78.086105">.com</tspan></text>
+            <text
+               xml:space="preserve"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2081px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;opacity:1;mix-blend-mode:screen;fill:#f0f4ba;fill-opacity:0.942457;stroke:#92f21d;stroke-width:12.8666;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers"
+               x="129.52121"
+               y="276.224"
+               id="text8"
+               inkscape:label=".commain"
+               transform="scale(1.3890134,0.71993544)"><tspan
+                 sodipodi:role="line"
+                 id="tspan8"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2081px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f0f4ba;fill-opacity:0.942457;stroke-width:12.8666"
+                 x="129.52121"
+                 y="276.224">.com</tspan></text>
+            <g
+               id="g5"
+               transform="matrix(0.75922376,0,0,0.49209521,16.273641,104.30323)">
+              <text
+                 xml:space="preserve"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;opacity:1;fill:#000000;fill-opacity:1;stroke:#92f21d;stroke-width:22.679;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers;filter:url(#filter9)"
+                 x="237.40291"
+                 y="78.086105"
+                 id="text3"
+                 inkscape:label=".comblur"><tspan
+                   sodipodi:role="line"
+                   id="tspan1"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:22.679"
+                   x="237.40291"
+                   y="78.086105" /></text>
+              <text
+                 xml:space="preserve"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;opacity:1;mix-blend-mode:screen;fill:#ffffff;fill-opacity:1;stroke:#92f21d;stroke-width:22.679;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers"
+                 x="237.78029"
+                 y="77.708725"
+                 id="text5"
+                 inkscape:label=".commain"><tspan
+                   sodipodi:role="line"
+                   id="tspan5"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:BPtypewriteDamaged;-inkscape-font-specification:'BPtypewriteDamaged, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:22.679"
+                   x="237.78029"
+                   y="77.708725" /></text>
+            </g>
+          </g>
+          <text
+             xml:space="preserve"
+             transform="matrix(0.26554515,0,0,0.27103567,-49.035524,91.429912)"
+             id="text7"
+             style="font-size:146.418px;font-family:Frakturika;-inkscape-font-specification:'Frakturika, Normal';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect8);shape-padding:9.19139;display:inline;opacity:1;mix-blend-mode:normal;fill:#000000;fill-opacity:1;stroke:#92f21d;stroke-width:85.7159;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers;filter:url(#filter13)"
+             inkscape:label="maintext"><tspan
+               x="183.20312"
+               y="393.58103"
+               id="tspan2">avikeinchains</tspan></text>
+        </g>
       </g>
       <text
          xml:space="preserve"
-         transform="matrix(0.26687862,0,0,0.26400145,-33.940488,38.136973)"
+         transform="matrix(0.26481919,0,0,0.23777971,-34.872798,47.97889)"
          id="text2"
-         style="font-size:146.418px;font-family:Frakturika;-inkscape-font-specification:'Frakturika, Normal';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);shape-padding:9.19139;display:inline;opacity:1;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke:#92f21d;stroke-width:85.7159;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers"
+         style="font-size:146.418px;font-family:Frakturika;-inkscape-font-specification:'Frakturika, Normal';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);shape-padding:9.19139;display:inline;opacity:1;mix-blend-mode:normal;fill:url(#linearGradient18);fill-opacity:1;stroke:#92f21d;stroke-width:85.7159;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers"
          inkscape:label="maintextblur"><tspan
            x="183.20312"
            y="393.58103"
-           id="tspan3">avikeinchains</tspan></text>
+           id="tspan6">avikeinchains</tspan></text>
       <text
          xml:space="preserve"
-         transform="matrix(0.26687863,0,0,0.26400145,-33.940488,38.136974)"
+         transform="matrix(0.26687863,0,0,0.26400145,-38.247889,153.05602)"
          id="text1"
-         style="font-size:146.418px;font-family:Frakturika;-inkscape-font-specification:'Frakturika, Normal';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);shape-padding:9.19139;display:inline;opacity:1;fill:url(#linearGradient10);fill-opacity:1;stroke:#92f21d;stroke-width:85.7159;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers;filter:url(#filter8)"
+         style="font-size:146.418px;font-family:Frakturika;-inkscape-font-specification:'Frakturika, Normal';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);shape-padding:9.19139;display:inline;opacity:0.998521;fill:#f10d0d;fill-opacity:1;stroke:#92f21d;stroke-width:85.7159;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers;filter:url(#filter8)"
          inkscape:label="maintext"><tspan
            x="183.20312"
            y="393.58103"
-           id="tspan4">avikeinchains</tspan></text>
+           id="tspan7">avikeinchains</tspan></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(0.27686188,0,0,0.20276631,-39.045024,14.349096)"
+         id="text15"
+         style="font-size:146.418px;font-family:Frakturika;-inkscape-font-specification:'Frakturika, Normal';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect15);shape-padding:9.19139;display:inline;opacity:1;fill:url(#linearGradient15);fill-opacity:1;stroke:#92f21d;stroke-width:85.7159;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers"
+         inkscape:label="maintext"><tspan
+           x="183.20312"
+           y="393.58103"
+           id="tspan10">avikeinchains</tspan></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26774731,0,0,0.27176992,-32.72601,111.73946)"
+         id="text11"
+         style="font-size:146.418px;font-family:Frakturika;-inkscape-font-specification:'Frakturika, Normal';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect11);shape-padding:9.19139;display:inline;opacity:1;fill:url(#linearGradient10);fill-opacity:1;stroke:#92f21d;stroke-width:85.7159;stroke-miterlimit:0;stroke-opacity:0;paint-order:stroke fill markers"
+         inkscape:label="maintext"><tspan
+           x="183.20312"
+           y="393.58103"
+           id="tspan12">avikeinchains</tspan></text>
+      <rect
+         style="opacity:1;fill:#fe0702;fill-opacity:1;fill-rule:evenodd;stroke:#f80000;stroke-width:0.0713929;stroke-linejoin:bevel;stroke-miterlimit:44.9;stroke-opacity:0"
+         id="rect16"
+         width="197.18324"
+         height="57.59536"
+         x="22.317375"
+         y="187.56596" />
     </g>
   </g>
 </svg>

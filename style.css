@@ -122,10 +122,11 @@ body {
 }
 
 .logo {
-    padding: 10px;
+    padding: 15px;
 }
 
 .logo img {
+    margin-left: -18px;
     width: 100vw;
 }
 
@@ -701,7 +702,6 @@ flex-direction: row;
     }
 
     .logo {
-        margin-left: -1rem;
         height: 100%;
         display: flex;
         flex-direction: row;
@@ -727,7 +727,7 @@ flex-direction: row;
 
     .header-flex-child:nth-child(2) {
     flex-direction: row;
-    margin-left: -3rem;
+    margin-left: -2.4rem;
         margin-top:1.5rem;
         padding: 1.8rem;
         background-position: left 5px center;
@@ -738,8 +738,8 @@ flex-direction: row;
         cursor: pointer;
         width: auto;
         font-size: var(--fs-400);
-        margin-left:1.5rem;
-        padding-right: 2rem;
+        margin-left:1.7rem;
+        padding-right: 1rem;
         background-image: url('./assets/img/srchinputbg.png');
         box-shadow: 2px 2px;
         
@@ -862,20 +862,22 @@ flex-direction: row;
     display: flex;
     flex-direction: row;
     border: 1px solid yellow;
-
+    width: 100%;
 }
 .fp_one {
-    
+    border: 1px solid white;
     flex-direction: row;
     display: flex;
     padding: 0.5rem;
-    height: 500px;
+    width: 75%;
 
 }
+
 .sub_fp_one {
-    width: 600px;
+    width: 100%;
+    height: 100px;
     display: flex;
-    border: 3px solid white;
+    border: 3px solid green;
     flex-direction: row;
     background-color: black;
     background-position: right;
@@ -888,13 +890,15 @@ flex-direction: row;
 .fp_two {
      display: flex;
     padding: 0.5rem;
+    border: 1px solid white;
+    width: 50%;
 }
 
 .sub_fp_two {
-    width: 360px;
+    width: 100%;
     display: flex;
     overflow: auto;
-    border: 3px solid white;
+    border: 3px solid yellow;
     flex-direction: column;
     background-color: black;
     background-position: right;
@@ -917,7 +921,7 @@ flex-direction: row;
 
     }
     #submit {
-        margin-top: 2.4rem;
+        margin-top: 2.2rem;
         margin-left: -1rem;
         height: 5px;
         padding: 1.9em 1.8em;
@@ -934,7 +938,7 @@ flex-direction: row;
     }
 
     .logo img {
-    width: 34rem;
+    width: 32rem;
     }
     .header-flex-child {
         flex-grow: 1;
@@ -946,8 +950,8 @@ flex-direction: row;
     }
      .header-flex-child:nth-child(2) {
     flex-direction: row;
-    margin-left: -3.5rem;
-        margin-top: 2.4rem;
+    margin-left: -1.6rem;
+        margin-top: 2.2rem;
         padding: 1.9rem;
         background-position: left 5px center;
     }
@@ -979,7 +983,7 @@ flex-direction: row;
 
     .header-flex-child:nth-child(4) a {
         margin-bottom: -5rem;
-        margin-left: -6rem;
+        margin-left: -5rem;
         object-fit: cover;
 
     }
@@ -990,4 +994,4 @@ flex-direction: row;
         height: auto;
     }
 }
- 
+}
