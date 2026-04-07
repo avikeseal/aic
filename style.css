@@ -90,7 +90,7 @@ body {
 }
 
 .body-bg {
-    background-image: linear-gradient( var(--clr-primary),black, var(--clr-primary), black );
+    background-image: linear-gradient( black, var(--clr-primary), black );
 }
 
 /* HEADER */
@@ -171,7 +171,6 @@ flex-direction: row;
       padding: 1.5rem;
       border: 2px solid var(--clr-font);
       background-color: var(--clr-tertiary);
-      opacity: 0.8;
       background-image: linear-gradient(var(--clr-tertiary), black);
       background-image:url('./assets/img/srchicon.png');
       background-size: 40px;
@@ -926,7 +925,7 @@ flex-direction: row;
         text-align: center;
         background: none;
         border: none;
-        padding-right: 2.5rem;
+        padding-right: 2.1rem;
         color: black;
     }
 
@@ -960,11 +959,9 @@ flex-direction: row;
 .front-page {
     display: flex;
     flex-direction: row;
-    border: 1px solid yellow;
     width: 100%;
 }
 .fp_one {
-    border: 1px solid white;
     flex-direction: row;
     display: flex;
     padding: 0.5rem;
@@ -973,12 +970,13 @@ flex-direction: row;
 }
 
 .sub_fp_one {
+    border: 1px solid whitesmoke;
+    padding: 8px;
     width: 100%;
     height: 600px;
     display: flex;
-    border: 3px solid whitesmoke;
     flex-direction: row;
-    background-color: black;
+    background-color: none;
     background-position: right;
     background-repeat: no-repeat;
     opacity: 0.8;
@@ -1000,7 +998,6 @@ flex-direction: row;
     flex-direction: column;
      display: flex;
     padding: 0.5rem;
-    border: 1px solid white;
     width: 50%;
 }
 
@@ -1008,7 +1005,7 @@ flex-direction: row;
     width: 100%;
     display: flex;
     overflow: auto;
-    border: 3px solid yellow;
+    border: 3px solid transparent;
     flex-direction: column;
     background-color: black;
     background-position: right;
