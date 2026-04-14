@@ -38,6 +38,35 @@ function type() {
 
 type();
 
+ let searchItems = [];
+
+ //Fetching from JSON file:
+ fetch('./items.json')
+    .then(res => res.json())
+    .then(data => {
+        searchItems = data;
+    })
+    .catch(err => console.error("Could not load search items: ", err));
+
+const searchInput = document.getElementById("search");
+const searchButton = document.getElementById("submit");
+
+//Creating a dropdown element:
+const dropdown = document.createElement("ul");
+dropdown.id = "search-dropdown";
+dropdown.style.cssText = `
+position: absolute;
+list-style: none;
+margin: 0;
+padding: 0;
+background-color: #000;
+border: 2px solid var(--clr-font);
+border-radius: 5px;
+width: ${searchInput.offsetWidth + 80}px;
+z-index: 999;
+display: none;
+`;
+
 //README 
 /*Splitting(); //process all elements with data-spiltting attribute
 
