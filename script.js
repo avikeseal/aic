@@ -38,10 +38,10 @@ function type() {
 
 type();
 
- let searchItems = [];
+let searchItems = [];
 
- //Fetching from JSON file:
- fetch('./items.json')
+//Fetching from JSON file:
+fetch('./items.json')
     .then(res => res.json())
     .then(data => {
         searchItems = data;
@@ -66,6 +66,16 @@ width: ${searchInput.offsetWidth + 80}px;
 z-index: 999;
 display: none;
 `;
+
+//Insert Dropdown after the form:
+searchInput.closest("form").insertAdjacentElement("afterend", dropdown);
+searchInput.closest("form").style.position = "relative";
+
+function showResults(query) {
+    dropdown.innerHTML = "";
+}
+
+
 
 //README 
 /*Splitting(); //process all elements with data-spiltting attribute
