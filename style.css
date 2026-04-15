@@ -552,7 +552,7 @@ flex-direction: row;
 .rmpage-content2 {
     margin-top: 8rem;
     width: auto;
-    height: auto;
+    height: 30rem;
        display: flex;
     overflow: auto;
     border: 3px solid var(--clr-tertiary);
@@ -566,10 +566,11 @@ flex-direction: row;
 .rmprofilepic {
     display: flex;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 10rem;
+    width: 10rem;
     border: 3px solid white;
     margin: 20px;
+    padding: 6rem;
 }
 
 .rmcontent {
@@ -595,8 +596,8 @@ flex-direction: row;
     text-align: center;
     font-family: bptypewrite;
     color: var(--clr-font);
-    font-size: var(--fs-500);
-    padding: 18px;
+    font-size: var(--fs-600);
+    padding: 2rem;
 
 }
 
@@ -1113,6 +1114,21 @@ codelink a {
     width: 50%;
 }
 
+/*README*/
+.rmpage-content {
+    display: flex;
+}
+.rmcontent p {
+    font-size: var(--fs-1000);
+}
+.rmcontent2 p {
+    padding: 6rem;
+}
+.rmprofilepic {
+    height: 13rem;
+    width: 13rem;
+    padding: 8rem;
+}
 }
 
 @media (min-width: 992px) {
