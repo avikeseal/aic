@@ -543,26 +543,61 @@ flex-direction: row;
     overflow: auto;
     border: 3px solid white;
     flex-direction: column;
+    background-color: var(--clr-primaryBlack);
     background-position: right;
     background-repeat: no-repeat;
     opacity: 0.8;
 }
 
+.rmpage-content2 {
+    margin-top: 8rem;
+    width: auto;
+    height: auto;
+       display: flex;
+    overflow: auto;
+    border: 3px solid var(--clr-tertiary);
+    flex-direction: column;
+    background-color: var(--clr-tertiary);
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
 
+.rmprofilepic {
+    display: flex;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 3px solid white;
+    margin: 20px;
+}
 
-.rmcontent p {
-    font-family: hardcore;
-    padding: 3rem;
-    color: var(--clr-font);
-    font-size: var(--fs-600);
-
+.rmcontent {
+    display: flex;
+    height: auto;
 }
 
 .rmcontent2 {
     display: flex;
-    flex-direction: column;
-    border-radius: 50%;
-    border: 3px solid white;
+    height: auto;
+}
+
+.rmcontent p {
+    text-align: right;
+    font-family: hardcore;
+    color: var(--clr-font);
+    font-size: var(--fs-900);
+    padding: 12px;
+
+}
+
+.rmcontent2 p {
+    text-align: center;
+    font-family: bptypewrite;
+    color: var(--clr-font);
+    font-size: var(--fs-500);
+    padding: 18px;
+
 }
 
 /*.rmpage-content-border2 {
@@ -1076,12 +1111,6 @@ codelink a {
 /*PROJECTS*/
 #project-content-border {
     width: 50%;
-}
-
-/*README*/
-.rmcontent p {
-    font-size: var(--fs-1000);
-
 }
 
 }
