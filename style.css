@@ -541,26 +541,23 @@ flex-direction: row;
     height: auto;
        display: flex;
     overflow: auto;
-    border: 3px solid white;
     flex-direction: column;
-    background-color: var(--clr-primaryBlack);
     background-position: right;
     background-repeat: no-repeat;
     opacity: 0.8;
+    z-index: 1;
 }
 
 .rmpage-content2 {
-    margin-top: 8rem;
     width: auto;
-    height: 30rem;
-       display: flex;
+    height: 50vh;
+    display: flex;
     overflow: auto;
     border: 3px solid var(--clr-tertiary);
     flex-direction: column;
     background-color: var(--clr-tertiary);
     background-position: right;
     background-repeat: no-repeat;
-    opacity: 0.8;
 }
 
 .rmprofilepic {
@@ -580,6 +577,7 @@ flex-direction: row;
 
 .rmcontent2 {
     display: flex;
+    flex-direction: column;
     height: auto;
 }
 
@@ -593,22 +591,41 @@ flex-direction: row;
 }
 
 .rmcontent2 p {
-    text-align: center;
+    text-align: left;
     font-family: bptypewrite;
     color: var(--clr-font);
-    font-size: var(--fs-600);
+    font-size: var(--fs-500);
     padding: 2rem;
 
 }
+.rmpage-content-border2 {
+    margin-top: 3rem;
+    border: 1px solid white;
+    z-index: 2;
+}
 
-/*.rmpage-content-border2 {
-    border-radius: 50%;
-    min-height: 100vh;
-    height: auto;
+.rmpage-content-border3 {
+    margin-top: -27rem;
+    z-index: 1;
+    overflow: auto;
+    margin-right: -1rem;
+    margin-left: 1rem;
+
+}
+
+.rmpage-content3 {
+    height: 50vh;
     display: flex;
-    border: 3px solid white;
-    margin-top: 4rem;
-}*/
+    overflow: auto;
+    border: 3px solid var(--clr-font);
+    flex-direction: column;
+    background-color: var(--clr-primaryBlack);
+    background-position: right;
+    background-repeat: no-repeat;
+    z-index: 1;
+    overflow: auto;
+    
+}
 
 
 
