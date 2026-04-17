@@ -311,13 +311,17 @@ flex-direction: row;
 /*FAKE BACKDROP DESIGN*/
 
 /*PROJECTS*/
+
+#project-content-border {
+    height: 50%;
+}
+
 .pagesSection {
     display:flex;
     background-image: linear-gradient(1800deg, var(--clr-tertiary), black, var(--clr-tertiary));
     background-position: center;
     background-repeat: no-repeat;
     flex-direction: column;
-    background-size: cover;
     padding: 3rem;
 }
 
@@ -325,12 +329,12 @@ flex-direction: row;
 
 
 .page-content {
+    height: 60vh;
     display: flex;
     overflow: auto;
     border: 3px solid white;
     flex-direction: column;
     background-color: black;
-    background-position: right;
     background-repeat: no-repeat;
     opacity: 0.8;
     
@@ -455,7 +459,7 @@ flex-direction: row;
 
 .page-content img {
     width: 100%;
-    height: 100%;
+    height: 700px;
     object-fit: cover;
 }
 
@@ -1130,6 +1134,7 @@ codelink a {
 
 /*PROJECTS*/
 #project-content-border {
+    height: 50%;
     width: 50%;
 }
 
