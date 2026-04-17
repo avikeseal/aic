@@ -599,17 +599,19 @@ flex-direction: row;
 
 }
 .rmpage-content-border2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-top: 3rem;
     border: 1px solid white;
     z-index: 2;
 }
 
 .rmpage-content-border3 {
-    margin-top: -27rem;
+    margin-top: -24rem;
     z-index: 1;
     overflow: auto;
     margin-right: -1rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 
 }
 
@@ -617,7 +619,7 @@ flex-direction: row;
     height: 50vh;
     display: flex;
     overflow: auto;
-    border: 3px solid var(--clr-font);
+    border: 1px solid var(--clr-font);
     flex-direction: column;
     background-color: var(--clr-primaryBlack);
     background-position: right;
