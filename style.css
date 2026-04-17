@@ -611,7 +611,7 @@ flex-direction: row;
 }
 
 .rmpage-content-border3 {
-    margin-top: -24rem;
+    margin-top: -26rem;
     z-index: 1;
     overflow: auto;
     margin-right: -1rem;
@@ -623,7 +623,7 @@ flex-direction: row;
     height: 50vh;
     display: flex;
     overflow: auto;
-    border: 1px solid var(--clr-font);
+    border: 3px solid var(--clr-font);
     flex-direction: column;
     background-color: var(--clr-primaryBlack);
     background-position: right;
@@ -1134,7 +1134,6 @@ codelink a {
 
 /*PROJECTS*/
 #project-content-border {
-    height: 50%;
     width: 50%;
 }
 
