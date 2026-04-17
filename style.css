@@ -311,6 +311,11 @@ flex-direction: row;
 /*FAKE BACKDROP DESIGN*/
 
 /*PROJECTS*/
+
+#project-content-border {
+    height: 50%;
+}
+
 .pagesSection {
     display:flex;
     background-image: linear-gradient(1800deg, var(--clr-tertiary), black, var(--clr-tertiary));
@@ -1127,6 +1132,7 @@ codelink a {
 
 /*PROJECTS*/
 #project-content-border {
+    height: 50%;
     width: 50%;
 }
 
