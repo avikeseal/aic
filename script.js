@@ -34,9 +34,14 @@ function type() {
     }
 
     setTimeout(type, typeSpeed);
-}
+} 
+type()
+    
 
-type();
+    
+
+
+//searchbar: 
 
 let searchItems = [];
 
@@ -73,7 +78,71 @@ searchInput.closest("form").style.position = "relative";
 
 function showResults(query) {
     dropdown.innerHTML = "";
+
+    if (!query) {
+        dropdown.style.display = "none";
+        return;
+    }
+
+    const filtered = searchItems.filter(item => 
+        item.label.toLowerCase().includes(query.toLowerCase()));
+
+
+if (filtered.length === 0) {
+    const li = document.createElement("li");
+    li.textContent = "No results found";
+    li.style.cssText = `
+        padding: 10px 16px;
+        color: var(--clr-font);
+        font-size: var(--fs-400);
+        opacity: 0.5;
+    `;
+    dropdown.appendChild(li);
+    dropdown.style.display = "block";
+    return;
 }
+
+filtered.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item.label;
+    li.style.cssText = `
+        padding: 10px 16px;
+        cursor: pointer;
+        color: var(--clr-font);
+        font-size: var(--fs-400);
+    `;
+    li.addEventListener("mouseenter", () => li.style.backgroundColor = "#222");
+    li.addEventListener("mouseleave", () => li.style.backgroundColor = "transparent");
+    li.addEventListener("click", () => {
+        window.location.href = item.href;
+        dropdown.style.display = "none";
+        searchInput.value = "";
+    });
+    dropdown.appendchild(li);
+    });
+    dropdown.style.display = "block";
+}
+
+
+
+//Live search as you go:
+searchInput.addEventListener("input", () => {
+    showResults(searchInput.value);
+});
+
+//Trigger on button click
+searchButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    showResults(searchInput.value);
+});
+
+//Close dropdown on when clicking outside:
+document.addEventListener("click", (e) => {
+    if (!e.target.closest("form") && e.target !== searchButton) {
+        dropdown.style.display = "none"
+    }
+})
+
 
 
 
