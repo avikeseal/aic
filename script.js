@@ -35,7 +35,10 @@ function type() {
 
     setTimeout(type, typeSpeed);
 } 
-type()
+if (textElement) {
+    type();
+}
+
     
 
     
@@ -43,7 +46,7 @@ type()
 
 //searchbar: 
 
-let searchItems = [];
+/*let searchItems = [];
 
 //Fetching from JSON file:
 fetch('./items.json')
@@ -121,12 +124,12 @@ filtered.forEach(item => {
     dropdown.appendchild(li);
     });
     dropdown.style.display = "block";
-}
+}*/
 
 
 
 //Live search as you go:
-searchInput.addEventListener("input", () => {
+/*searchInput.addEventListener("input", () => {
     showResults(searchInput.value);
 });
 
@@ -141,7 +144,7 @@ document.addEventListener("click", (e) => {
     if (!e.target.closest("form") && e.target !== searchButton) {
         dropdown.style.display = "none"
     }
-})
+})*/
 
 
 
@@ -207,3 +210,72 @@ function typeSentence(sentence) {
 
 
         typeSentence(sentences[current]);*/
+
+        // ── SEARCH DATA ──────────────────────────────────────────────
+const portfolioData = [
+  { title: "Art",      desc: "Visual artwork and illustrations",  url: "./art.html",      tags: ["art", "illustration", "drawing", "visual"] },
+  { title: "Design",   desc: "Graphic and visual design work",    url: "./design.html",   tags: ["design", "graphic", "branding"] },
+  { title: "README",   desc: "About me — who is Avike",          url: "./readme.html",   tags: ["about", "bio", "readme", "who"] },
+  { title: "Projects", desc: "Coding and creative projects",      url: "./projects.html", tags: ["projects", "code", "dev", "build"] },
+  { title: "Media",    desc: "Videos, music, and media",         url: "./media.html",    tags: ["media", "video", "music", "audio"] },
+  { title: "Contact",  desc: "Get in touch",                     url: "./contact.html",  tags: ["contact", "email", "reach", "message"] },
+];
+
+// ── SEARCH LOGIC ─────────────────────────────────────────────
+const searchInput = document.getElementById('search');
+const submitBtn   = document.getElementById('submit');
+
+// Create dropdown container and inject after the search form
+const dropdown = document.createElement('div');
+dropdown.id = 'search-dropdown';
+searchInput.closest('form').insertAdjacentElement('afterend', dropdown);
+
+function runSearch(query) {
+  const q = query.trim().toLowerCase();
+  dropdown.innerHTML = '';
+
+  if (!q) { dropdown.style.display = 'none'; return; }
+
+  const results = portfolioData.filter(item =>
+    item.title.toLowerCase().includes(q) ||
+    item.desc.toLowerCase().includes(q)  ||
+    item.tags.some(tag => tag.includes(q))
+  );
+
+  if (results.length === 0) {
+    dropdown.innerHTML = '<div class="search-no-result">No results found</div>';
+  } else {
+    results.forEach(item => {
+      const el = document.createElement('a');
+      el.href = item.url;
+      el.className = 'search-result-item';
+      el.innerHTML = `<span class="sr-title">${item.title}</span><span class="sr-desc">${item.desc}</span>`;
+      dropdown.appendChild(el);
+    });
+  }
+
+  dropdown.style.display = 'block';
+}
+
+searchInput.addEventListener('keyup', (e) => {
+  if (e.key === 'Enter') {
+    const first = dropdown.querySelector('.search-result-item');
+    if (first) window.location.href = first.href;
+    return;
+  }
+  runSearch(searchInput.value);
+});
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  const first = dropdown.querySelector('.search-result-item');
+  if (first) window.location.href = first.href;
+  else runSearch(searchInput.value);
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('#search-dropdown') && e.target !== searchInput) {
+    dropdown.style.display = 'none';
+  }
+});

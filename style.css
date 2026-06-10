@@ -238,14 +238,13 @@ flex-direction: row;
       margin-top: -5.5rem;
     /*margin-top: -117px;*/
     /*margin-left: 250px;*/
-    object-fit: cover;
 
 }
 
 .header-flex-child:nth-child(4) img {
-	display: flex;
-	max-width: 60px;
-	height: auto;
+	
+	max-width: 30px;
+	height: 20px;
 }
 
 /*PROJECTS CONTAINER*/
@@ -1236,4 +1235,51 @@ codelink a {
     .section-brief {
         height: 17rem;
     }
+}
+
+#search-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background-color: var(--clr-tertiary);
+  border: 2px solid var(--clr-primary);
+  width: 220px;
+  font-family: bptypewrite, monospace;
+}
+
+.search-result-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--clr-primary);
+  transition: background-color 0.2s ease;
+}
+
+.search-result-item:hover {
+  background-color: var(--clr-primary);
+}
+
+.sr-title {
+  color: var(--clr-font);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-bold);
+}
+
+.sr-desc {
+  color: var(--clr-MG);
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+
+.search-no-result {
+  padding: 0.6rem 1rem;
+  color: var(--clr-MG);
+  font-family: bptypewrite, monospace;
+  font-size: var(--fs-400);
+}
+
+/* Make the search form position:relative so dropdown anchors to it */
+.header-flex-child.search {
+  position: relative;
 }
