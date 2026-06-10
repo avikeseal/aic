@@ -223,7 +223,7 @@ flex-direction: row;
     font-size: var(--fs-400);
     color: var(--clr-font);
 }
-.header-flex-child:nth-child(4) {
+/*.header-flex-child:nth-child(4) {
       flex-direction: row;
       display: flex;
       justify-content: center;
@@ -237,15 +237,14 @@ flex-direction: row;
     margin-left: 8rem;
       margin-top: -5.5rem;
     /*margin-top: -117px;*/
-    /*margin-left: 250px;*/
+    /*margin-left: 250px;
 
 }
 
 .header-flex-child:nth-child(4) img {
 	
-	max-width: 30px;
-	height: 20px;
-}
+	
+}*/
 
 /*PROJECTS CONTAINER*/
 .projects_container {
