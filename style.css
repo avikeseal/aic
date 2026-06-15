@@ -1238,8 +1238,8 @@ codelink a {
 
 #search-dropdown {
   display: none;
-  position: absolute;
-  z-index: 100;
+  /*position: absolute;*/
+  z-index: 1;
   background-color: var(--clr-tertiary);
   border: 2px solid var(--clr-primary);
   width: 220px;
