@@ -699,6 +699,8 @@ flex-direction: row;
         display: none;
     }*/
 
+    
+
     #frontPage {
     display: none;
 }
@@ -708,8 +710,6 @@ flex-direction: row;
    
 }
 @media (min-width: 375px) and (max-width: 391px) {
-    .header-flex-child:nth-child(4) {
-    }
     /*.page-content p {
         border: 1px solid red;
         font-size: 15px;
