@@ -1170,6 +1170,31 @@ codelink a {
     width: 13rem;
     padding: 8rem;
 }
+
+.fp_one_caraousel_wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+/*Horizontal track arrangement*/
+.fp_one_caraousel_track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /*hides default scrollbar from firefox*/
+}
+
+.fp_one_caraousel_track::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
 }
 
 @media (min-width: 992px) {
