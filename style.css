@@ -578,7 +578,7 @@ flex-direction: row;
 
 .rmcontent p {
     text-align: right;
-    font-family: hardcore;
+    font-family: bptypewrite;
     color: var(--clr-font);
     font-size: var(--fs-900);
     padding: 12px;
@@ -622,6 +622,20 @@ flex-direction: row;
     z-index: 1;
     overflow: auto;
     
+}
+
+.readme-custom-link {
+    color: whitesmoke;
+    font-family: hardcore;
+    font-size: var(--fs-900);
+    text-decoration: none;
+}
+
+.readme-custom-link-main {
+    color: whitesmoke;
+    font-family: hardcore;
+    font-size: var(--fs-900);
+    text-decoration: none;
 }
 
 
@@ -1213,7 +1227,8 @@ codelink a {
     background-color: rgba(0, 0, 0, 0.5); /*semi transparent black*/
     color: white;
     border: none;
-    font-size: 24px;
+    border-radius: 50px;
+    font-size: 15px;
     padding: 10px 15px;
     cursor: pointer;
     z-index: 10; /*ensures arrow stay on top of images*/

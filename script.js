@@ -5,7 +5,8 @@ console.log('The value of variable is: ', variable);
 
 const textElement = document.getElementById('type-text');
 const phrases = ['COMMISSION HAND DRAWN SKETCHES',
-    'DIVERSE PRINT SIZES AVAILABLE']
+    'BRAND AND OR MERCH DESIGN', 'LOGO DESIGN WITH ATTENTION TO BRAND IMAGE',
+'WEB DESIGN AND DEVELOPMENT' ]
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
