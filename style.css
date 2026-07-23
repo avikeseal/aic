@@ -1082,7 +1082,7 @@ flex-direction: row;
 }
 
 .sub_fp_two {
-    margin-top: 12px;
+    margin-top: 3px;
     width: 100%;
     display: flex;
     border: 1px solid whitesmoke;
@@ -1093,16 +1093,16 @@ flex-direction: row;
 }
 
 .fptwo_heading{
-    height: 70px;
-    font-size: small;
+    height: 100px;
+    font-size: var(--fs-500);
 }
 
 .fptwo_heading h1 {
     background-image: linear-gradient(1800deg, black, whitesmoke,#8F8F9D);
-    font-family: bptypewrite;
+    font-family: hardcore;
     color: var(--clr-primaryBlack);
     padding: 3px;
-    height: 70px;
+    height: 100px;
 }
 
 .fptwo_content {
@@ -1114,6 +1114,15 @@ flex-direction: row;
     height: 100%;
     width: 100%;
     object-fit: contain;
+}
+
+.COTBMlore-page {
+    display: inline-block;
+    font-family: hardcore;
+    text-decoration: none;
+    color: var(--clr-font);
+    font-size: var(--fs-900);
+    font-weight: bold;
 }
 
 .section-brief {
