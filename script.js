@@ -57,6 +57,59 @@ prevBtn.addEventListener('click', () => {
     track.scrollLeft -= slideWidth;
 });
 
+const track2 = document.querySelector('.fp_two_caraousel_track');
+const prevBtn2  = document.getElementById('prevBtn2');
+const nextBtn2 = document.getElementById('nextBtn2');
+
+//move forward:
+nextBtn2.addEventListener('click', () => {
+    const slideWidth2 = track.clientWidth;
+    track2.scrollLeft += slideWidth2;
+});
+
+//move backward:
+prevBtn2.addEventListener('click', () => {
+    const slideWidth2 = track.clientWidth;
+    track2.scrollLeft -= slideWidth2;
+});
+
+/*const caraousels = document.querySelectorAll('.fp_one_caraousel_wrapper');
+
+caraousels.forEach((caraousel) => {
+    const track = caraousel.querySelector('.fp_one_caraousel_track');
+    const slides = caraousel.querySelectorAll('.caraousel_slide');
+    const nextBtn = caraousel.querySelector('.next-btn');
+    const prevBtn = caraousel.querySelector('.prev-btn');
+
+    let currentIndex = 0;
+    const maxIndex = slides.length - 1;
+
+    //function to move the track based on current index
+    const updateSlidePosition = () => {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    //next button click event:
+    nextBtn.addEventListener('click', () => {
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; //loop back to the first slide
+        }
+        updateSlidePosition();
+    });
+
+    //previous button click event
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = maxIndex; //loop to the last slide
+        }
+        updateSlidePosition();
+    });
+});
+
     
 
     

@@ -595,7 +595,6 @@ flex-direction: row;
 .rmpage-content-border2 {
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: ;
     border: 1px solid whitesmoke;
     z-index: 2;
 }
@@ -1202,7 +1201,19 @@ codelink a {
     scrollbar-width: none; /*hides default scrollbar from firefox*/
 }
 
+.fp_two_caraousel_track {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /*hides default scrollbar from firefox*/
+}
+
 .fp_one_caraousel_track::-webkit-scrollbar {
+    display: none; /*hides default scrollbar from chrome*/
+}
+
+.fp_two_caraousel_track::-webkit-scrollbar {
     display: none; /*hides default scrollbar from chrome*/
 }
 
