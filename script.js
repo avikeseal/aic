@@ -5,7 +5,7 @@ console.log('The value of variable is: ', variable);
 
 const textElement = document.getElementById('type-text');
 const phrases = ['COMMISSION HAND DRAWN SKETCHES',
-    'BRAND AND OR MERCH DESIGN', 'LOGO DESIGN WITH ATTENTION TO BRAND IMAGE',
+    'BRAND AND OR MERCH DESIGN', 'LOGO DESIGN AND BRAND IMAGE',
 'WEB DESIGN AND DEVELOPMENT' ]
 let phraseIndex = 0;
 let charIndex = 0;
@@ -39,6 +39,23 @@ function type() {
 if (textElement) {
     type();
 }
+
+//for caraousel arrows:
+const track = document.querySelector('.fp_one_caraousel_track');
+const prevBtn  = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+//move forward:
+nextBtn.addEventListener('click', () => {
+    const slideWidth = track.clientWidth;
+    track.scrollLeft += slideWidth;
+});
+
+//move backward:
+prevBtn.addEventListener('click', () => {
+    const slideWidth = track.clientWidth;
+    track.scrollLeft -= slideWidth;
+});
 
     
 
@@ -212,7 +229,7 @@ function typeSentence(sentence) {
 
         typeSentence(sentences[current]);*/
 
-        // ── SEARCH DATA ──────────────────────────────────────────────
+        /*── SEARCH DATA ──────────────────────────────────────────────
 const portfolioData = [
   { title: "Art",      desc: "Visual artwork and illustrations",  url: "./art.html",      tags: ["art", "illustration", "drawing", "visual"] },
   { title: "Design",   desc: "Graphic and visual design work",    url: "./design.html",   tags: ["design", "graphic", "branding"] },
@@ -279,4 +296,4 @@ document.addEventListener('click', (e) => {
   if (!e.target.closest('#search-dropdown') && e.target !== searchInput) {
     dropdown.style.display = 'none';
   }
-});
+})*/
