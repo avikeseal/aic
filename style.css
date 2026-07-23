@@ -545,7 +545,6 @@ flex-direction: row;
 
 .rmpage-content2 {
     width: auto;
-    height: 50vh;
     display: flex;
     overflow: auto;
     border: 3px solid var(--clr-tertiary);
@@ -581,7 +580,7 @@ flex-direction: row;
     font-family: bptypewrite;
     color: var(--clr-font);
     font-size: var(--fs-900);
-    padding: 12px;
+    padding: 40px;
 
 }
 
@@ -596,13 +595,13 @@ flex-direction: row;
 .rmpage-content-border2 {
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 3rem;
+    margin-top: ;
     border: 1px solid whitesmoke;
     z-index: 2;
 }
 
 .rmpage-content-border3 {
-    margin-top: -26rem;
+    margin-top: -27rem;
     z-index: 1;
     overflow: auto;
     margin-right: -1rem;
@@ -611,7 +610,7 @@ flex-direction: row;
 }
 
 .rmpage-content3 {
-    height: 50vh;
+    height: 70vh;
     display: flex;
     overflow: auto;
     border: 3px solid var(--clr-font);
