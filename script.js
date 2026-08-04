@@ -73,6 +73,10 @@ prevBtn2.addEventListener('click', () => {
     track2.scrollLeft -= slideWidth2;
 });
 
+gsap.fromTo(".logo", {
+    y: -100,}, 
+{y: 5, duration: 1});
+
 /*const caraousels = document.querySelectorAll('.fp_one_caraousel_wrapper');
 
 caraousels.forEach((caraousel) => {
