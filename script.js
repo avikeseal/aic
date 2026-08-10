@@ -73,6 +73,23 @@ prevBtn2.addEventListener('click', () => {
     track2.scrollLeft -= slideWidth2;
 });
 
+//sketches
+const fa = document.querySelector('.pgcontent_caraousel_track');
+const faprevBtn = document.getElementById('faprevBtn');
+const fanextBtn = document.getElementById('fanextBtn');
+
+//move forward:
+fanextBtn.addEventListener('click', () => {
+    const faslideWidth = track.clientWidth;
+    fa.scrollLeft -= faslideWidth;
+});
+
+//move backward:
+faprevBtn.addEventListener('click', () => {
+    const faslideWidth = track.clientWidth;
+    fa.scrollLeft -= faslideWidth;
+});
+
 gsap.fromTo(".logo", {
     y: -100,}, 
 {y: 5, duration: 1});

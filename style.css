@@ -515,19 +515,19 @@ flex-direction: row;
     width: auto;
 }
 
-.page-content button {
+/*.page-content button {
     border-radius: 0.3rem;
     border: 6px solid var(--clr-LG);
     margin-top: 20px;
     width: 10rem;
     background-color: var(--clr-tertiary);
     padding: 1rem;
-        /*padding: 17px 70px;*/
+        /*padding: 17px 70px;
     font-family: bptypewrite;
     font-weight: var(--fw-bold);
     font-size: var(--fs-400);
     color: var(--clr-LG);
-}
+}*/
 
 /* README */
 
@@ -699,6 +699,7 @@ flex-direction: row;
 
 /* MEDIA QUERIES FOR DEVICES */
 @media (min-width: 375px) and (max-width: 768px) {
+   
     /*.header-flex-child:nth-child(4) {
     }
     /*.page-content p {
@@ -717,6 +718,8 @@ flex-direction: row;
 
     #frontPage {
     display: none;
+
+
 }
 
 
@@ -736,9 +739,32 @@ flex-direction: row;
         display: none;
     }
 
-    
+     /*sketches*/
+     .faarrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); /*centers the arrow vertically*/
+        background-color: rgba(0, 0, 0, 0.5); /*semi transparent black*/
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-size: 15px;
+        padding: 10px 15px;
+        cursor: pointer;
+        z-index: 10;
+    }
 
+    .prev {
+    left: 50px; /* sticks to tje left edge*/
+    }
 
+    .next {
+        right: 50px; /*sticks to the right edge*/
+    }
+
+    .faarrow:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 
    
 }
@@ -1268,6 +1294,9 @@ codelink a {
 .caraousel-arrow:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+/*sketches*/
+
 
 
 
