@@ -40,6 +40,7 @@ if (textElement) {
     type();
 }
 
+//index
 //for caraousel arrows:
 const track = document.querySelector('.fp_one_caraousel_track');
 const prevBtn  = document.getElementById('prevBtn');
@@ -74,25 +75,7 @@ prevBtn2.addEventListener('click', () => {
 });
 
 //sketches
-const fa = document.querySelector('.pgcontent_caraousel_track');
-const faprevBtn = document.getElementById('faprevBtn');
-const fanextBtn = document.getElementById('fanextBtn');
 
-//move forward:
-fanextBtn.addEventListener('click', () => {
-    const faslideWidth = track.clientWidth;
-    fa.scrollLeft -= faslideWidth;
-});
-
-//move backward:
-faprevBtn.addEventListener('click', () => {
-    const faslideWidth = track.clientWidth;
-    fa.scrollLeft -= faslideWidth;
-});
-
-gsap.fromTo(".logo", {
-    y: -100,}, 
-{y: 5, duration: 1});
 
 /*const caraousels = document.querySelectorAll('.fp_one_caraousel_wrapper');
 
