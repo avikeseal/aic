@@ -40,6 +40,47 @@ if (textElement) {
     type();
 }
 
+
+
+//caraousel function
+function initCaraousel({wrapperSelector, trackSelector, slideSelector, prevBtnId, nextBtnId }) {
+    const wrapper = document.querySelector(wrapperSelector);
+    if (!wrapper) return; //bail if this caraousel isn't on th current page
+
+    const track = wrapper.querySelector(trackSelector);
+    const slides = wrapper.querySelectorAll(slideSelector);
+    const prevBtn = document.getElementById(prevBtnId);
+    const nextBtn = document.getElementById(nextBtnId);
+
+    if (!track || !slides.length || !prevBtn || !nextBtn) return;
+
+    let currentIndex = 0;
+    const slideWidth = slides[0].getBoundingClientRect().width;
+
+    function goToSlide(index) {
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+        currentIndex = index;
+        track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+    prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+}
+
+//sketches
+//calling the function for the art page:
+initCaraousel({
+    wrapperSelector: '.fa_caraousel_wrapper',
+    trackSelector: '.fa_caraousel_track',
+    slideSelector: '.fa_caraousel-slide',
+    prevBtnId: 'faprevBtn',
+    nextBtnId: 'fanextBtn'
+});
+
+
+
+/*
 //index
 //for caraousel arrows:
 const track = document.querySelector('.fp_one_caraousel_track');
@@ -74,10 +115,9 @@ prevBtn2.addEventListener('click', () => {
     track2.scrollLeft -= slideWidth2;
 });
 
-//sketches
 
 
-/*const caraousels = document.querySelectorAll('.fp_one_caraousel_wrapper');
+const caraousels = document.querySelectorAll('.fp_one_caraousel_wrapper');
 
 caraousels.forEach((caraousel) => {
     const track = caraousel.querySelector('.fp_one_caraousel_track');

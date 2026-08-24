@@ -748,15 +748,17 @@ flex-direction: row;
         max-width: 600px;
         margin: 0 auto;
         border: 1px solid white;
+        overflow: hidden; 
 
     }
 
     .fa_caraousel_track {
         display: flex;
-        overflow-x: auto;
+        /*overflow-x: auto;
         scroll-behavior: smooth;
         scroll-snap-type: x mandatory;
         scrollbar-width: none; /*hides default scrollbar from firefox*/
+        transition: transform 0.3s ease;
     }
 
     /*individual slides configuration*/
@@ -767,8 +769,9 @@ flex-direction: row;
 
     .fa_caraousel-slide img {
         width: 100%;
-        height: 100%; /*adjust height requirement*/
+        /*height: 100%; adjust height requirement*/
         object-fit: cover; /*keep image proportions intact*/
+        display: block;
     }
 
     /*caraousel navigation style*/
