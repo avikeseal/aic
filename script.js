@@ -78,6 +78,14 @@ initCaraousel({
     nextBtnId: 'fanextBtn'
 });
 
+initCaraousel({
+    wrapperSelector: '.fa2_caraousel_wrapper',
+    trackSelector: '.fa_caraousel_track',
+    slideSelector: '.fa_caraousel-slide',
+    prevBtnId: 'fa2prevBtn',
+    nextBtnId: 'fa2nextBtn'
+})
+
 
 
 /*

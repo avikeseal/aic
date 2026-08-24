@@ -752,6 +752,15 @@ flex-direction: row;
 
     }
 
+    .fa2_caraousel_wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid white;
+        overflow: hidden;
+    }
+
     .fa_caraousel_track {
         display: flex;
         /*overflow-x: auto;
