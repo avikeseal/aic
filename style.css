@@ -733,9 +733,9 @@ flex-direction: row;
         border: 1px solid red;
         font-size: 15px;
     }*/
-    .rmpage-content {
-        height: 30rem;
-    }
+    .rmpage-content /*{
+        height: 3rem;
+    }*/
 
     .section-brief img {
         display: none;
