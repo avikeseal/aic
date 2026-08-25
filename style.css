@@ -729,17 +729,7 @@ flex-direction: row;
    
 }
 @media (min-width: 375px) and (max-width: 391px) {
-    /*.page-content p {
-        border: 1px solid red;
-        font-size: 15px;
-    }*/
-    .rmpage-content /*{
-        height: 3rem;
-    }*/
-
-    .section-brief img {
-        display: none;
-    }
+   
 
      /*sketches*/
     .fa_caraousel_wrapper {
@@ -753,6 +743,15 @@ flex-direction: row;
     }
 
     .fa2_caraousel_wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid white;
+        overflow: hidden;
+    }
+
+    .fa3_caraousel_wrapper {
         position: relative;
         width: 100%;
         max-width: 600px;
@@ -808,6 +807,32 @@ flex-direction: row;
 
     .facaraousel-arrow:hover {
         background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /*about*/
+     /*.page-content p {
+        border: 1px solid red;
+        font-size: 15px;
+    }*/
+    .rmpage-content {
+        height: 1rem;
+    }
+
+    .section-brief img {
+        display: none;
+    }
+
+    .rmpage-content3 {
+        margin-top: -7rem;
+    /*display: flex;
+    overflow: auto;
+    border: 3px solid var(--clr-font);
+    flex-direction: column;
+    background-color: var(--clr-primaryBlack);
+    background-position: right;
+    background-repeat: no-repeat;
+    z-index: 1;
+    overflow: auto;*/
     }
 
 
@@ -1246,26 +1271,7 @@ codelink a {
     margin-top: -12rem;
 }
 
-/*PROJECTS*/
-#project-content-border {
-    width: 50%;
-}
 
-/*README*/
-.rmpage-content {
-    display: flex;
-}
-.rmcontent p {
-    font-size: var(--fs-1000);
-}
-.rmcontent2 p {
-    padding: 6rem;
-}
-.rmprofilepic {
-    height: 13rem;
-    width: 13rem;
-    padding: 8rem;
-}
 
 .fp_one_caraousel_wrapper {
     position: relative;
@@ -1339,6 +1345,56 @@ codelink a {
 .caraousel-arrow:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+/*PROJECTS*/
+#project-content-border {
+    width: 50%;
+}
+
+/*README*/
+.rmpage-content {
+    display: flex;
+}
+.rmcontent p {
+    font-size: var(--fs-1000);
+}
+.rmcontent2 p {
+    padding: 6rem;
+}
+.rmprofilepic {
+    height: 13rem;
+    width: 13rem;
+    padding: 8rem;
+}
+
+/*about*/
+     /*.page-content p {
+        border: 1px solid red;
+        font-size: 15px;
+    }*/
+    .rmpage-content {
+        height: 2rem;
+    }
+
+    .section-brief img {
+        display: none;
+    }
+
+    .rmpage-content3 {
+        height: 55vh;
+        margin-top: 5rem;
+    /*isplay: flex;
+    overflow: auto;
+    border: 3px solid var(--clr-font);
+    flex-direction: column;
+    background-color: var(--clr-primaryBlack);
+    background-position: right;
+    background-repeat: no-repeat;
+    z-index: 1;
+    overflow: auto;*/
+    }
+
+
 
 /*sketches*/
 

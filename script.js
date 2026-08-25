@@ -68,6 +68,7 @@ function initCaraousel({wrapperSelector, trackSelector, slideSelector, prevBtnId
     prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
 }
 
+
 //sketches
 //calling the function for the art page:
 initCaraousel({
@@ -84,12 +85,17 @@ initCaraousel({
     slideSelector: '.fa_caraousel-slide',
     prevBtnId: 'fa2prevBtn',
     nextBtnId: 'fa2nextBtn'
+});
+
+initCaraousel({
+    wrapperSelector: '.fa3_caraousel_wrapper',
+    trackSelector: '.fa_caraousel_track',
+    slideSelector: '.fa_caraousel-slide',
+    prevBtnId: 'fa3prevBtn',
+    nextBtnId: 'fa3nextBtn'
 })
 
-
-
-/*
-//index
+//main page
 //for caraousel arrows:
 const track = document.querySelector('.fp_one_caraousel_track');
 const prevBtn  = document.getElementById('prevBtn');
@@ -122,6 +128,10 @@ prevBtn2.addEventListener('click', () => {
     const slideWidth2 = track.clientWidth;
     track2.scrollLeft -= slideWidth2;
 });
+
+/*
+//index
+
 
 
 
