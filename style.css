@@ -515,19 +515,19 @@ flex-direction: row;
     width: auto;
 }
 
-/*.page-content button {
+.submit {
     border-radius: 0.3rem;
     border: 6px solid var(--clr-LG);
     margin-top: 20px;
-    width: 10rem;
+    width: 100%;
+    max-width: 10rem;
     background-color: var(--clr-tertiary);
-    padding: 1rem;
-        /*padding: 17px 70px;
+    padding: 17px 20px;
     font-family: bptypewrite;
     font-weight: var(--fw-bold);
     font-size: var(--fs-400);
     color: var(--clr-LG);
-}*/
+}
 
 /* README */
 
