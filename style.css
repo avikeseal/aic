@@ -531,7 +531,34 @@ flex-direction: row;
 
 /* README */
 
-.rmpage-content {
+.rmpage-stack-wrapper {
+    position: relative;
+}
+
+.rmpage-content-border2 {
+    background: var(--clr-tertiary);
+    padding: 10px;
+    color: whitesmoke;
+    font-family: bptypewrite;
+    position: relative;
+    z-index: 2;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid whitesmoke;
+}
+
+.rmpage-content-border3 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: -12px;
+    bottom: -12px;
+    z-index: 1;
+    border: 3px solid var(--clr-font);
+    background-color: var(--clr-primaryBlack);
+}
+
+/*.rmpage-content {
     width: auto;
     height: auto;
        display: flex;
@@ -599,16 +626,16 @@ flex-direction: row;
     z-index: 2;
 }
 
-.rmpage-content-border3 {
+/*.rmpage-content-border3 {
     margin-top: -27rem;
     z-index: 1;
     overflow: auto;
     margin-right: -1rem;
     margin-left: 2rem;
 
-}
+}*/
 
-.rmpage-content3 {
+/*.rmpage-content3 {
     height: 70vh;
     display: flex;
     overflow: auto;
@@ -620,7 +647,7 @@ flex-direction: row;
     z-index: 1;
     overflow: auto;
     
-}
+}*/
 
 .readme-custom-link {
     color: whitesmoke;
@@ -699,6 +726,14 @@ flex-direction: row;
 
 /* MEDIA QUERIES FOR DEVICES */
 @media (min-width: 375px) and (max-width: 768px) {
+
+     /*readme*/
+    .rmpage-content-border3 {
+        top: 8px;
+        left: 30px;
+        right: -15px;
+        bottom: -30px;
+    }
    
     /*.header-flex-child:nth-child(4) {
     }
@@ -809,31 +844,14 @@ flex-direction: row;
         background-color: rgba(0, 0, 0, 0.8);
     }
 
-    /*about*/
-     /*.page-content p {
-        border: 1px solid red;
-        font-size: 15px;
-    }*/
-    .rmpage-content {
-        height: 1rem;
+    /*readme*/
+    .rmpage-content-border3 {
+        top: 8px;
+        left: 30px;
+        right: -15px;
+        bottom: -30px;
     }
 
-    .section-brief img {
-        display: none;
-    }
-
-    .rmpage-content3 {
-        margin-top: -7rem;
-    /*display: flex;
-    overflow: auto;
-    border: 3px solid var(--clr-font);
-    flex-direction: column;
-    background-color: var(--clr-primaryBlack);
-    background-position: right;
-    background-repeat: no-repeat;
-    z-index: 1;
-    overflow: auto;*/
-    }
 
 
    
@@ -1350,49 +1368,15 @@ codelink a {
 #project-content-border {
     width: 50%;
 }
-
-/*README*/
-.rmpage-content {
-    display: flex;
-}
-.rmcontent p {
-    font-size: var(--fs-1000);
-}
-.rmcontent2 p {
-    padding: 6rem;
-}
-.rmprofilepic {
-    height: 13rem;
-    width: 13rem;
-    padding: 8rem;
+ 
+/*readme*/
+.rmpage-content-border3 {
+    top: 12px;
+    left: 30px;
+    right: -20px;
+    bottom: -30px;
 }
 
-/*about*/
-     /*.page-content p {
-        border: 1px solid red;
-        font-size: 15px;
-    }*/
-    .rmpage-content {
-        height: 2rem;
-    }
-
-    .section-brief img {
-        display: none;
-    }
-
-    .rmpage-content3 {
-        height: 55vh;
-        margin-top: 5rem;
-    /*isplay: flex;
-    overflow: auto;
-    border: 3px solid var(--clr-font);
-    flex-direction: column;
-    background-color: var(--clr-primaryBlack);
-    background-position: right;
-    background-repeat: no-repeat;
-    z-index: 1;
-    overflow: auto;*/
-    }
 
 
 
