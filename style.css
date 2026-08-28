@@ -1212,7 +1212,7 @@ flex-direction: row;
     background-image: linear-gradient(1800deg, black, whitesmoke,#8F8F9D);
     font-family: bptypewrite;
     padding: 3px;
-    height: 50px;
+    height: 70px;
 }
 
 .fptwo_heading h1 a {
@@ -1221,6 +1221,7 @@ flex-direction: row;
 }
 
 .fptwo_content {
+    margin-top: 20px;
     padding: 10px;
 }
 
