@@ -311,6 +311,42 @@ flex-direction: row;
 
 /*PROJECTS*/
 
+.rmpage-stack-wrapper {
+    position: relative;
+}
+
+.section-brief {
+    color: whitesmoke;
+    position: relative;
+    z-index: 2;
+    background-color: var(--clr-tertiary);
+    display: flex;
+    flex-direction: column;
+}
+
+.section-shadow {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: -12px;
+    bottom: -12px;
+    z-index: 1;
+    background-color: var(--clr-primaryBlack);
+    border: 1px solid white;
+}
+
+.codelink {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: whitesmoke;
+}
+
 
 .pagesSection {
     display:flex;
@@ -336,7 +372,7 @@ flex-direction: row;
 
 }
 
-.section-brief {
+/*.section-brief {
     z-index: 2;
     background-color: var(--clr-tertiary);
     margin-top: -5rem;
@@ -360,7 +396,7 @@ flex-direction: row;
     height: 50px;
     justify-content: right;
     align-items: right;
-}
+}*/
 
 .codelink a {
     text-decoration: none;
