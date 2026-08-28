@@ -953,6 +953,12 @@ flex-direction: row;
     #homeButton {
         margin-left: 28rem;
     }
+
+    .page-content {
+        max-width: 300px;
+        margin-left:  2px;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 767px) and (max-width: 768px) {
