@@ -348,9 +348,6 @@ flex-direction: row;
 
 .section-shadow {
     background-color: var(--clr-primaryBlack);
-    margin-right: -1rem;
-    margin-left: 1rem;
-    margin-top: -200px;
     z-index: 1;
     border: 1px solid white;
     height: 40vh;
