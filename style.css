@@ -768,6 +768,15 @@ flex-direction: row;
         bottom: -30px;
     }
 
+    /*projects*/
+    .section-brief {
+        top: -60px;
+    }
+    .section-shadow {
+        top: -40px;
+        bottom: 5px;
+    }
+
 
    
     /*.header-flex-child:nth-child(4) {
@@ -887,14 +896,7 @@ flex-direction: row;
         bottom: -30px;
     }
 
-    /*projects*/
-    .section-brief {
-        top: -60px;
-    }
-    .section-shadow {
-        top: -40px;
-        bottom: 5px;
-    }
+    
 
 
 
@@ -950,19 +952,6 @@ flex-direction: row;
     }
     #homeButton {
         margin-left: 28rem;
-    }
-
-    .section-brief {
-        height: 10rem;
-    }
-
-    .section-shadow {
-        height: 11rem;
-        margin-top: -6rem;
-    }
-
-    .codelink a {
-        margin-top: -70px;
     }
 }
 
