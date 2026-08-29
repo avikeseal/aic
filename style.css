@@ -1142,6 +1142,11 @@ flex-direction: row;
         
     }
 
+    .topNav a[href="commissions.html"] {
+        display: none;
+    }
+
+
     .home_button {
         margin-left: 40rem;
     }
