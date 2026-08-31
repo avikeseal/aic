@@ -247,6 +247,13 @@ flex-direction: row;
 	
 }*/
 
+/*SKETCHES*/
+.page-content-sketches img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /*PROJECTS CONTAINER*/
 .projects_container {
     height: 100%;
@@ -360,7 +367,7 @@ flex-direction: row;
 
 
 
-.page-content {
+.page-content-projects {
     
     display: flex;
     overflow: auto;
@@ -481,8 +488,21 @@ flex-direction: row;
 
 }
 
+.page-content-contact {
+    
+    display: flex;
+    overflow: auto;
+    border: 3px solid white;
+    flex-direction: column;
+    background-color: black;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    
 
-.page-content img {
+}
+
+
+.page-content-contact img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -496,7 +516,7 @@ flex-direction: row;
 
 }
 
-.page-content h3 {
+.page-content-contact h3 {
     padding: 2rem;
     font-family: bptypewrite;
     color: white;
@@ -509,7 +529,7 @@ flex-direction: row;
 
 }*/
 
-.page-content p {
+.page-content-contact p {
     margin-top: 1rem; 
     height: 10vh;
     padding: 1rem 2rem;
@@ -518,7 +538,7 @@ flex-direction: row;
     font-family: bptypewrite;
 }
 
-.page-content form {
+.page-content-contact form {
     background-image: linear-gradient(1600deg, var(--clr-primaryBlack), red);
     display: flex;
     flex-direction: column;
@@ -529,7 +549,7 @@ flex-direction: row;
     padding: 1rem 2rem;
 }
 
-.page-content label {
+.page-content-contact {
     margin-top: 12px;
 }
 
@@ -905,11 +925,11 @@ flex-direction: row;
 }
 
 @media (min-width: 375px) and (max-width: 661px) {
-     .page-content p {
-        font-size: 13px;
+    /* .page-content p {
+        font-size: 83px;
     }
 
-    /*.page-content label {
+    .page-content label {
         border: 1px solid yellow;
         padding-left: 2px;
     }*/
@@ -955,7 +975,7 @@ flex-direction: row;
         margin-left: 28rem;
     }
 
-    .page-content {
+    .page-content-projects {
         max-width: 300px;
         margin-left:  2px;
         margin-right: auto;
@@ -1153,9 +1173,9 @@ flex-direction: row;
     .page-content p {
     margin-top: 1rem; 
     font-family: bptypewrite;
-    height: 10vh;
+    height: 100vh;
     padding: 1rem 2rem;
-    color: white;
+    color: black;
     font-size: 20px;
     }
 
@@ -1439,7 +1459,7 @@ flex-direction: row;
     }
 
     /*PROJECTS*/
-    .page-content {
+    .page-content-projects {
         max-width: 400px;
         margin-left:  2px;
         margin-right: auto;
