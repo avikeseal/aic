@@ -781,6 +781,85 @@ flex-direction: row;
 /* MEDIA QUERIES FOR DEVICES */
 @media (min-width: 375px) and (max-width: 768px) {
 
+
+    /*sketches*/
+    .fa_caraousel_wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid white;
+        overflow: hidden; 
+
+    }
+
+    .fa2_caraousel_wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid white;
+        overflow: hidden;
+    }
+
+    .fa3_caraousel_wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid white;
+        overflow: hidden;
+    }
+
+    .fa_caraousel_track {
+        display: flex;
+        /*overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none; /*hides default scrollbar from firefox*/
+        transition: transform 0.3s ease;
+    }
+
+    /*individual slides configuration*/
+    .fa_caraousel-slide {
+        flex: 0 0 100%; /*each slide occupies full wrapper width*/
+        scroll-snap-align: start; /*alignment snap point*/
+    }
+
+    .fa_caraousel-slide img {
+        width: 100%;
+        /*height: 100%; adjust height requirement*/
+        object-fit: cover; /*keep image proportions intact*/
+        display: block;
+    }
+
+    /*caraousel navigation style*/
+    .facaraousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); /*centers the arrow vertically*/
+        background-color: rgba(0, 0, 0, 0.5); /*semi transparent black*/
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-size: 15px;
+        padding: 10px 15px;
+        cursor: pointer;
+        z-index: 10; /*ensures arrow stay on top of images*/
+    }
+
+    .faarrow-left {
+        left: 10px; /* sticks to tje left edge*/
+    }
+
+    .faarrow-right {
+        right: 10px; /*sticks to the right edge*/
+    }
+
+    .facaraousel-arrow:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
      /*readme*/
     .rmpage-content-border3 {
         top: 8px;
