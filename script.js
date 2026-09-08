@@ -129,6 +129,18 @@ prevBtn2.addEventListener('click', () => {
     track2.scrollLeft -= slideWidth2;
 });
 
+//hamburger menu:
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileNavPanel = document.getElementById('mobileNavPanel');
+
+if (hamburgerBtn && mobileNavPanel) {
+    hamburgerBtn.addEventListener('click', () => {
+        hamburgerBtn.classList.toggle('open');
+        mobileNavPanel.classList.toggle('open');
+    });
+}
+
+
 /*
 //index
 

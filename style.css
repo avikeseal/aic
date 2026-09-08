@@ -758,7 +758,7 @@ flex-direction: row;
 .hamburger-btn {
     display: none;
     position: fixed;
-    top: 20px;
+    top: 70px;
     right: 20px;
     z-index: 100;
     flex-direction: column;
@@ -775,7 +775,7 @@ flex-direction: row;
     display: block;
     height: 3px;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: var(--clr-font);
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
