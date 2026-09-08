@@ -95,6 +95,18 @@ initCaraousel({
     nextBtnId: 'fa3nextBtn'
 })
 
+
+//hamburger menu:
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileNavPanel = document.getElementById('mobileNavPanel');
+
+if (hamburgerBtn && mobileNavPanel) {
+    hamburgerBtn.addEventListener('click', () => {
+        hamburgerBtn.classList.toggle('open');
+        mobileNavPanel.classList.toggle('open');
+    });
+}
+
 //main page
 //for caraousel arrows:
 const track = document.querySelector('.fp_one_caraousel_track');
@@ -129,16 +141,6 @@ prevBtn2.addEventListener('click', () => {
     track2.scrollLeft -= slideWidth2;
 });
 
-//hamburger menu:
-const hamburgerBtn = document.getElementById('hamburgerBtn');
-const mobileNavPanel = document.getElementById('mobileNavPanel');
-
-if (hamburgerBtn && mobileNavPanel) {
-    hamburgerBtn.addEventListener('click', () => {
-        hamburgerBtn.classList.toggle('open');
-        mobileNavPanel.classList.toggle('open');
-    });
-}
 
 
 /*
