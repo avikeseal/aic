@@ -757,7 +757,7 @@ flex-direction: row;
 
 .hamburger-btn {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 70px;
     right: 20px;
     z-index: 100;
@@ -851,7 +851,12 @@ flex-direction: row;
 
 
 /* MEDIA QUERIES FOR DEVICES */
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 768px) {
+
+    .logo {
+        margin-left: -25px;
+        padding: 45px;
+    }
 
 
     /*sketches*/
@@ -1146,6 +1151,14 @@ flex-direction: row;
 } 
 
 @media (max-width: 799px) {
+
+    .hamburger-btn {
+        top: 30px;
+    }
+
+    .mobile-nav-panel {
+        top: 0;
+    }
 
     .hamburger-btn {
         display: flex;
