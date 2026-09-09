@@ -1153,7 +1153,7 @@ flex-direction: row;
 @media (max-width: 799px) {
 
     .hamburger-btn {
-        top: 30px;
+        top: 20px;
     }
 
     .mobile-nav-panel {

@@ -1,4 +1,22 @@
 
+//hamburger menu:
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileNavPanel = document.getElementById('mobileNavPanel');
+
+if (hamburgerBtn && mobileNavPanel) {
+    hamburgerBtn.addEventListener('click', () => {
+        hamburgerBtn.classList.toggle('open');
+        mobileNavPanel.classList.toggle('open');
+    });
+}
+
+
+
+
+
+
+
+
 console.log('My script is running')
 let variable = '420';
 console.log('The value of variable is: ', variable);
@@ -96,7 +114,7 @@ initCaraousel({
 })
 
 
-//hamburger menu:
+/*hamburger menu:
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const mobileNavPanel = document.getElementById('mobileNavPanel');
 
@@ -105,7 +123,7 @@ if (hamburgerBtn && mobileNavPanel) {
         hamburgerBtn.classList.toggle('open');
         mobileNavPanel.classList.toggle('open');
     });
-}
+}*/
 
 //main page
 //for caraousel arrows:
