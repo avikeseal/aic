@@ -875,10 +875,12 @@ flex-direction: row;
 }
 
 .mobile_home_caraousel-slide {
+    padding: 10px;
     flex: 0 0 100%;
 }
 
 .mobile_home_caraousel-slide img {
+    border: 3px solid whitesmoke;
     width: 100%;
     display: block;
 }
