@@ -886,10 +886,26 @@ flex-direction: row;
 }
 
 .slide-caption {
+    margin-top: 10px;
     color: whitesmoke;
     font-family: bptypewrite;
     padding: 12px;
     text-align: center;
+    background: var(--clr-tertiary);
+    border: 1px solid whitesmoke;
+    z-index: 3;
+}
+
+.slide-caption-backdrop {
+    z-index: 1;
+    margin-top: -30px;
+    height: 60px;
+    color: whitesmoke;
+    font-family: bptypewrite;
+    padding: 12px;
+    text-align: center;
+    background: var(--clr-primaryBlack);
+    border: 1px solid whitesmoke;
 }
 
 /*caraousel navigation style*/
@@ -1476,7 +1492,7 @@ flex-direction: row;
 
 .sub_fp_one {
     padding: 10px;
-    border: 1px solid whitesmoke;
+    /*border: 1px solid whitesmoke;*/
     width: 100%;
     height: 100%;
     display: flex;
@@ -1497,10 +1513,12 @@ flex-direction: row;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /*border: 3px solid whitesmoke;*/
 }
 
 .mainsection1 {
-    margin: 5px;
+    border: 1px solid whitesmoke;
+    margin: 10px;
     padding: 2rem;
     background-color: var(--clr-tertiary);
 
@@ -1512,6 +1530,7 @@ flex-direction: row;
 }
 
 .fp_two {
+    margin-top: 10px;
     flex-direction: column;
      display: flex;
     padding: 0.5rem;
@@ -1522,7 +1541,7 @@ flex-direction: row;
     margin-top: 3px;
     width: 100%;
     display: flex;
-    border: 1px solid whitesmoke;
+    border: 3px solid whitesmoke;
     flex-direction: column;
     background-position: right;
     background-repeat: no-repeat;
@@ -1548,14 +1567,14 @@ flex-direction: row;
 
 .fptwo_content {
     margin-top: 20px;
-    padding: 10px;
+    padding: 8px;
 }
 
 .fptwo_content img {
-    border: 1px solid whitesmoke;
+    border: 2px solid whitesmoke;
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .COTBMlore-page {
@@ -1575,7 +1594,7 @@ flex-direction: row;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    border: 1px solid white;
+    border: 3px solid white;
 
 }
 
