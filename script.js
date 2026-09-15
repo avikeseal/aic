@@ -113,6 +113,14 @@ initCaraousel({
     nextBtnId: 'fa3nextBtn'
 })
 
+initCaraousel({
+    wrapperSelector: '.mobile_home_caraousel_wrapper',
+    trackSelector: '.mobile_home_caraousel_track',
+    slideSelector: '.mobile_home_caraousel-slide',
+    prevBtnId: 'mobileHomePrevBtn',
+    nextBtnId: 'mobileHomeNextBtn'
+});
+
 
 /*hamburger menu:
 const hamburgerBtn = document.getElementById('hamburgerBtn');

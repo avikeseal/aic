@@ -855,6 +855,68 @@ flex-direction: row;
 
 }
 
+/*Mobile Desktop Content*/
+.mobile-home {
+    display: none; /*hidden by deafult only shows below 800px*/
+}
+
+.mobile_home_caraousel_wrapper {
+    position: relative;
+    width: 100%;
+   /*max-width: 500px;*/
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+}
+
+.mobile_home_caraousel_track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.mobile_home_caraousel-slide {
+    flex: 0 0 100%;
+}
+
+.mobile_home_caraousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+.slide-caption {
+    color: whitesmoke;
+    font-family: bptypewrite;
+    padding: 12px;
+    text-align: center;
+}
+
+/*caraousel navigation style*/
+.caraousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /*centers the arrow vertically*/
+    background-color: rgba(0, 0, 0, 0.5); /*semi transparent black*/
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10; /*ensures arrow stay on top of images*/
+}
+
+.arrow-left {
+    left: 10px; /* sticks to tje left edge*/
+}
+
+.arrow-right {
+    right: 10px; /*sticks to the right edge*/
+}
+
+.caraousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 
 
@@ -1180,9 +1242,24 @@ flex-direction: row;
     .topNav {
         display: none;
     }
+
+    /*Mobile view for desktop page*/
+    @media (max-width: 799px) {
+        .front-page {
+            display: none;
+        }
+        .mobile-home {
+            display: block;
+        }
+    }
 }
 
 @media (min-width: 800px) {
+
+    /*Mobil view for desktop page*/
+    .mobile-home {
+        display: none;
+    }
 
     .mobile-nav-panel {
         display: none;
