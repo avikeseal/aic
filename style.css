@@ -1169,14 +1169,16 @@ flex-direction: row;
 }
 
 @media (min-width: 375px) and (max-width: 661px) {
-    /* .page-content p {
-        font-size: 83px;
+
+    /*CONTACT*/
+     .page-content p {
+        font-size: 13px;
     }
 
     .page-content label {
         border: 1px solid yellow;
         padding-left: 2px;
-    }*/
+    }
 }
 @media (min-width: 400px) and (max-width: 413px) {
     #submit {
@@ -1219,7 +1221,8 @@ flex-direction: row;
         margin-left: 28rem;
     }
 
-    .page-content-projects {
+    /*PROJECTS*/
+    .page-content {
         max-width: 300px;
         margin-left:  2px;
         margin-right: auto;
@@ -1465,12 +1468,13 @@ flex-direction: row;
         margin-left: 40rem;
     }
 
+    /*CONTACT*/
     .page-content p {
     margin-top: 1rem; 
     font-family: bptypewrite;
     height: 100vh;
     padding: 1rem 2rem;
-    color: black;
+    color: whitesmoke;
     font-size: 20px;
     }
 
@@ -1865,6 +1869,13 @@ flex-direction: row;
         max-width: 70px;
         height: auto;
     }
+
+    /*FOOTER*/
+    .footerSection {
+    flex-direction: column;
+    border: white;
+    height: 500px;
+}
 
 }
 
