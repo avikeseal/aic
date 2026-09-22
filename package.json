@@ -1,0 +1,27 @@
+{
+  "name": "aic",
+  "version": "1.0.0",
+  "description": "avikeinchains portfolio website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avikeseal/aic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avikeseal/aic/issues"
+  },
+  "homepage": "https://github.com/avikeseal/aic#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.0",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.1"
+  }
+}
