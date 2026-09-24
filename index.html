@@ -225,6 +225,7 @@
                     <div class="track-details">
                         <div class="marquee-container">
                             <!--the classic ticker text look-->
+                            <!--target id for the ticker-->
                             <div class="marquee-text" id="track-title">NOW PLAYING: Interstate Love Song - Stone Temple Pilots</div>
 
 
@@ -241,14 +242,14 @@
 
                         <!--retor controller buttons-->
                         <div class="player-controls">
-                            <button class="btn-retro">◀◀</button>
-                            <button class="btn-retro btn-play">▶</button>
-                            <button class="btn-retro">■</button>
-                            <button class="btn-retro">▶▶</button>
+                            <button class="btn-retro btn-skip">◀◀</button>
+                            <button class="btn-retro btn-toggle" id="play-pause-btn">❚❚</button>
+                            <button class="btn-retro btn-toggle" id="stop-btn">■</button>
+                            <button class="btn-retro btn-skip">▶▶</button>
                         </div>
 
                         <div class="player-footer-tags">
-                            <span class="tag-status">● LIVE STREAMING</span>
+                            <span class="tag-status" id="live-indicator">● LIVE STREAMING</span>
                             <a href="#" class="add-btn">+ Add to profile</a>
                         </div>
 

@@ -959,7 +959,7 @@ flex-direction: row;
     box-sizing: border-box;
 
     background: #22252a;
-    border: 3px double #666;
+    border: 3px double whitesmoke;
     box-shadow: 5px 5px 0px #000;
     font-family: bptypewrite;
     color: #00ff00;
@@ -969,14 +969,14 @@ flex-direction: row;
 
 /*header strip*/
 .player-header {
-    background: linear-gradient(90deg, #0055ff, #00aaff);
-    color: #fff;
+    background-image: linear-gradient(1800deg, black, whitesmoke,#8F8F9D);
+    color: black;
     padding: 6px 8px;
     font-size: 12px;
     font-weight: var(--fw-bold);
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid whitesmoke;
 }
 
 .player-window-controls {
@@ -988,7 +988,7 @@ flex-direction: row;
     display: flex;
     padding: 8px;
     gap: 12px;
-    background-color: #181a1b;
+    background-color: var(--clr-tertiary);
 }
 
 /*artwork frame*/
@@ -1028,6 +1028,30 @@ flex-direction: row;
     animation: myspaceMarquee 12s linear infinite;
     font-size: 13px;
     font-weight: var(--fw-bold);
+}
+
+.marquee-text.is-paused {
+    animation-play-state: paused !important;
+    color: #ff0055; /*turns hot pink qhen frozen*/
+}
+
+.btn-skip {
+    opacity: 0.75;
+    color: #888;
+}
+
+/*retro error shake effect*/
+.glitch-shake {
+    animation: shakeeffect 0.2s ease-in-out;
+}
+
+@keyframes shakeEffect {
+    0% { transform: translate(0, 0); }
+    20% {transform: translate(-4px, 2px);}
+    40% {transform: translate(4px, -1px);}
+    60% {transform: translate(-2px, -2px);}
+    80% {transform: translate(3px, 1px);}
+    100% {transform: translate(0, 0);}
 }
 
 @keyframes myspacemarquee {
@@ -1070,7 +1094,7 @@ flex-direction: row;
 }
 
 .btn-retro {
-    background: #444;
+    background: var(--clr-primary);
     border: 2px solid;
     border-color: #777 #222 #222 #777;
     color: #fff;

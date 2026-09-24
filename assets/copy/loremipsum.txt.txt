@@ -31,4 +31,63 @@ use this for projects descriptions:
                         consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+
+
+
+
+// =========================================================
+// NEW: MYSPACE RETRO SPOTIFY WIDGET CONTROLS
+// =========================================================
+const marquee = document.getElementById("track-title");
+const playPauseBtn = document.getElementById("play-pause-btn");
+const stopBtn = document.getElementById("stop-btn");
+const liveIndicator = document.getElementById("live-indicator");
+const skipButtons = document.querySelectorAll(".btn-skip");
+const playerFrame = document.querySelector(".myspace-player");
+
+let isPlaying = true;
+
+// 1. Play / Pause Button logic (Toggles scrolling state)
+if (playPauseBtn && marquee && liveIndicator) {
+    playPauseBtn.addEventListener("click", () => {
+        if (isPlaying) {
+            marquee.classList.add("is-paused");
+            playPauseBtn.innerText = "▶"; // Switch to play triangle
+            liveIndicator.innerText = "❚❚ LOCAL PAUSE";
+            liveIndicator.style.color = "#ff0055";
+            isPlaying = false;
+        } else {
+            marquee.classList.remove("is-paused");
+            playPauseBtn.innerText = "❚❚"; // Switch back to pause bars
+            liveIndicator.innerText = "● LIVE STREAMING";
+            liveIndicator.style.color = "#ffaa00";
+            isPlaying = true;
+        }
+    });
+}
+
+// 2. Stop Button logic (Freezes everything locally)
+if (stopBtn && marquee && playPauseBtn && liveIndicator) {
+    stopBtn.addEventListener("click", () => {
+        marquee.classList.add("is-paused");
+        playPauseBtn.innerText = "▶";
+        liveIndicator.innerText = "■ WIDGET STOPPED";
+        liveIndicator.style.color = "#888";
+        isPlaying = false;
+    });
+}
+
+// 3. Skip Buttons Easter Egg (Shakes the entire widget if they try to skip you)
+if (playerFrame && skipButtons.length > 0) {
+    skipButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            playerFrame.classList.add("glitch-shake");
+            
+            // Remove the class after the animation ends so it can be re-triggered
+            setTimeout(() => {
+                playerFrame.classList.remove("glitch-shake");
+            }, 200);
+        });
+    });
+}

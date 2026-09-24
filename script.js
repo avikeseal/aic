@@ -169,6 +169,8 @@ prevBtn2.addEventListener('click', () => {
 
 
 
+
+
 /*
 //index
 
