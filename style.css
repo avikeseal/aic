@@ -955,8 +955,7 @@ flex-direction: row;
 
 .myspace-player {
     width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
 
     background: #22252a;
@@ -1421,6 +1420,8 @@ flex-direction: row;
      #homeButton {
         margin-left: 37rem;
     }
+
+    
 } 
 
 @media (max-width: 799px) {
