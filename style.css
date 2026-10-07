@@ -972,7 +972,7 @@ flex-direction: row;
     background-image: linear-gradient(1800deg, black, whitesmoke,#8F8F9D);
     color: black;
     padding: 6px 8px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: var(--fw-bold);
     display: flex;
     justify-content: space-between;
@@ -1030,6 +1030,11 @@ flex-direction: row;
     font-weight: var(--fw-bold);
 }
 
+@keyframes myspaceMarquee {
+    0% {transform: translate3d(0, 0, 0); }
+    100% {transform: translate3d(-100%, 0, 0); }
+}
+
 .marquee-text.is-paused {
     animation-play-state: paused !important;
     color: #ff0055; /*turns hot pink qhen frozen*/
@@ -1042,7 +1047,7 @@ flex-direction: row;
 
 /*retro error shake effect*/
 .glitch-shake {
-    animation: shakeeffect 0.2s ease-in-out;
+    animation: shakeEffect 0.2s ease-in-out;
 }
 
 @keyframes shakeEffect {

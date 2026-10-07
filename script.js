@@ -167,6 +167,59 @@ prevBtn2.addEventListener('click', () => {
     track2.scrollLeft -= slideWidth2;
 });
 
+//mobile-widget - music player
+const marquee = document.getElementById('track-title');
+const playPauseBtn = document.getElementById('play-pause-btn');
+const stopBtn = document.getElementById('stop-btn');
+const liveIndicator = document.getElementById('live-indicator');
+const skipButtons = document.querySelectorAll('.btn-skip');
+const playerFrame = document.querySelector('.myspace-player');
+
+let isPlaying = true;
+
+//1. Play / Pause Button logic (Toggles scrolling state)
+if (playPauseBtn && marquee && liveIndicator) {
+    playPauseBtn.addEventListener('click', () => {
+        if (isPlaying) {
+            marquee.classList.add('is-paused');
+            playPauseBtn.innerText = '▶';
+            liveIndicator.innerText = '❚❚ LOCAL PAUSE';
+            liveIndicator.style.color = '#ff0055';
+            isPlaying = false;
+        } else {
+            marquee.classList.remove('is-paused');
+            playPauseBtn.innerText = '❚❚';
+            liveIndicator.innerText = '● LIVE STREAMING';
+            liveIndicator.style.color = '#ffaa00';
+            isPlaying = true;
+        }
+    });
+}
+
+//2. Stop button logic (freezes everything locally)
+if (stopBtn && marquee && playPauseBtn && liveIndicator) {
+    stopBtn.addEventListener('click', () => {
+        marquee.classList.add('is-paused');
+        playPauseBtn.innerText = '▶';
+        liveIndicator.innerText = '■ WIDGET STOPPED';
+        liveIndicator.style.color = '#888';
+        isPlaying = false;
+    });
+}
+
+//3. Skip buttons Easter Egg (shakes the entire widget if the try to skip you)
+if (playerFrame && skipButtons.length > 0) {
+    skipButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            playerFrame.classList.add('glitch-shake');
+
+            //remove the class after the animation ends so it can be re-triggered
+            setTimeout(() => {
+                playerFrame.classList.remove('glitch-shake');
+            }, 200);
+        });
+    });
+}
 
 
 
