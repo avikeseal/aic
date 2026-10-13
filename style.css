@@ -1517,6 +1517,8 @@ flex-direction: row;
             display: block;
         }
     }
+
+    
 }
 
 @media (min-width: 800px) {
@@ -1801,14 +1803,17 @@ flex-direction: row;
     font-family: bptypewrite;
     padding: 17px;
     height: 70px;
+    font-size: 12px;
 }
 
 .fptwo_heading{
     height: 70px;
-    font-size: var(--fs-400);
+    font-size: var(--fs-600);
 }
 
 .fptwo_heading h1 {
+    border-bottom: 3px solid whitesmoke;
+    font-size: 28px;
     background-image: linear-gradient(1800deg, black, whitesmoke,#8F8F9D);
     font-family: bptypewrite;
     padding: 5px;
