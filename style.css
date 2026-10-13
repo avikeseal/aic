@@ -878,6 +878,11 @@ flex-direction: row;
     display: none; /*hidden by deafult only shows below 800px*/
 }
 
+.mobile-widgets {
+    display: flex;
+    flex-direction: column;
+}
+
 .mobile_home_caraousel_wrapper {
     position: relative;
     width: 100%;
@@ -1140,6 +1145,39 @@ flex-direction: row;
 
 .add-btn:hover {
     text-decoration: underline;
+}
+
+.sub_fp_two {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    border: 1px solid whitesmoke;
+    flex-direction: column;
+    background-position: right;
+    background-repeat: no
+    
+    
+}
+
+.fptwo_heading{
+    height: 70px;
+    font-size: var(--fs-400);
+}
+
+.fptwo_heading h1 {
+    background-image: linear-gradient(1800deg, black, whitesmoke,#8F8F9D);
+    color: black;
+    padding: 6px 8px;
+    font-family: bptypewrite;
+    font-size: 14px;
+    font-weight: var(--fw-bold);
+    display: flex;
+    justify-content: space-between;
+}
+
+.fptwo_heading h1 a {
+    color: var(--clr-primaryBlack);
+   text-decoration: none;
 }
 
 
